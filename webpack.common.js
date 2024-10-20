@@ -80,10 +80,6 @@ module.exports = {
       filename: './index.html',
     }),
 
-    new HtmlWebpackPlugin({
-      template: './src/blog.html',
-      filename: './blog.html'
-    }),
 
     new HtmlWebpackPlugin({
       template: './src/documentation.html',
@@ -108,11 +104,6 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/interviews/interview-item.html',
       filename: './interviews/interview-item.html'
-    }),
-
-    new HtmlWebpackPlugin({
-      template: './src/merch-items/merch-item.html',
-      filename: './merch-items/merch-item.html'
     }),
 
     new HtmlWebpackPlugin({
