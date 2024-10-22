@@ -60,7 +60,8 @@ module.exports = {
         }
       },
       {
-        test: /\.(ttf|otf|woff|woff2)$/i,
+        test: /\.(woff|ttf|eot|svg)(\?v=[a-z0-9]\.[a-z0-9]\.[a-z0-9])?$/,
+
         loader: 'file-loader',
         options: {
           name: 'fonts/[name].[ext]'
@@ -77,53 +78,8 @@ module.exports = {
     // Landing page
     new HtmlWebpackPlugin({
       template: './src/index.html',
-      filename: './index.html',
+      filename: './index.html'
     }),
-
-    new HtmlWebpackPlugin({
-      template: './src/blog.html',
-      filename: './blog.html'
-    }),
-
-    new HtmlWebpackPlugin({
-      template: './src/documentation.html',
-      filename: './documentation.html'
-    }),
-
-    new HtmlWebpackPlugin({
-      template: './src/gallery.html',
-      filename: './gallery.html'
-    }),
-
-    new HtmlWebpackPlugin({
-      template: './src/articles/article-item.html',
-      filename: './articles/article-item.html'
-    }),
-
-    new HtmlWebpackPlugin({
-      template: './src/cards/card-item.html',
-      filename: './cards/cards-item.html'
-    }),
-
-    new HtmlWebpackPlugin({
-      template: './src/interviews/interview-item.html',
-      filename: './interviews/interview-item.html'
-    }),
-
-    new HtmlWebpackPlugin({
-      template: './src/merch-items/merch-item.html',
-      filename: './merch-items/merch-item.html'
-    }),
-
-    new HtmlWebpackPlugin({
-      template: './src/tutorials/tutorial-item.html',
-      filename: './tutorials/tutorial-item.html'
-    }),
-
-
-
-
-
 
     // Internal pages
     // new HtmlWebpackPlugin({
@@ -145,6 +101,7 @@ module.exports = {
     ])
   ],
   optimization: {
-    minimizer: [new CssMinimizerPlugin()]
+    minimizer: [new CssMinimizerPlugin()],
+    portableRecords: true
   }
 }
