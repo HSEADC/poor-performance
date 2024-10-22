@@ -53,19 +53,20 @@ module.exports = {
         type: 'asset/source'
       },
       {
-        test: /\.(png|jpg|jpeg|gif|svg|webp|mp4)$/i,
+        test: /\.(png|jpg|jpeg|gif|svg|webp)$/i,
         type: 'asset/resource',
         generator: {
           filename: 'images/[hash][ext][query]'
         }
       },
-   {
-        test: /\.(ttf|otf|woff|woff2|eot)$/i,
-        type: 'asset/resource',
-        generator: {
-          filename: 'fonts/[hash][ext][query]'
+      {
+        test: /\.(woff|ttf|eot|svg)(\?v=[a-z0-9]\.[a-z0-9]\.[a-z0-9])?$/,
+
+        loader: 'file-loader',
+        options: {
+          name: 'fonts/[name].[ext]'
         }
-     }
+      }
     ]
   },
   plugins: [
@@ -77,44 +78,8 @@ module.exports = {
     // Landing page
     new HtmlWebpackPlugin({
       template: './src/index.html',
-      filename: './index.html',
+      filename: './index.html'
     }),
-
-
-    new HtmlWebpackPlugin({
-      template: './src/documentation.html',
-      filename: './documentation.html'
-    }),
-
-    new HtmlWebpackPlugin({
-      template: './src/gallery.html',
-      filename: './gallery.html'
-    }),
-
-    new HtmlWebpackPlugin({
-      template: './src/articles/article-item.html',
-      filename: './articles/article-item.html'
-    }),
-
-    new HtmlWebpackPlugin({
-      template: './src/cards/card-item.html',
-      filename: './cards/cards-item.html'
-    }),
-
-    new HtmlWebpackPlugin({
-      template: './src/interviews/interview-item.html',
-      filename: './interviews/interview-item.html'
-    }),
-
-    new HtmlWebpackPlugin({
-      template: './src/tutorials/tutorial-item.html',
-      filename: './tutorials/tutorial-item.html'
-    }),
-
-
-
-
-
 
     // Internal pages
     // new HtmlWebpackPlugin({
@@ -136,6 +101,7 @@ module.exports = {
     ])
   ],
   optimization: {
-    minimizer: [new CssMinimizerPlugin()]
+    minimizer: [new CssMinimizerPlugin()],
+    portableRecords: true
   }
 }
