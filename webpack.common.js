@@ -53,19 +53,19 @@ module.exports = {
         type: 'asset/source'
       },
       {
-        test: /\.(png|jpg|jpeg|gif|svg|webp)$/i,
+        test: /\.(png|jpg|jpeg|gif|svg|webp|mp4)$/i,
         type: 'asset/resource',
         generator: {
           filename: 'images/[hash][ext][query]'
         }
       },
-      {
-        test: /\.(ttf|otf|woff|woff2)$/i,
-        loader: 'file-loader',
-        options: {
-          name: 'fonts/[name].[ext]'
+   {
+        test: /\.(ttf|otf|woff|woff2|eot)$/i,
+        type: 'asset/resource',
+        generator: {
+          filename: 'fonts/[hash][ext][query]'
         }
-      }
+     }
     ]
   },
   plugins: [
