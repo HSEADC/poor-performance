@@ -7,7 +7,7 @@
 
 h2{
     font-family: 'Sf-Pro';
-    color: #000c;
+    color: #292D34;
     text-align: center;
     letter-spacing: -.04em;
     font-size: 68px;
@@ -50,15 +50,19 @@ display: flex;
 }
 
 .description {
-color: #000000a3;
+color: #292D34;
+opacity: 64%;
+letter-spacing: .01em;
 text-align: center;
-letter-spacing: -.02em;
 margin-top: 0;
 margin-bottom: 0;
 font-size: 16px;
+font-family: 'Sf-Pro';
 font-weight: 500;
 line-height: 20px;
 text-decoration: none;
+
+
 }
 
 .telegram-container {
@@ -165,18 +169,31 @@ padding-bottom: 14px;
 padding-left: 20px;
 text-decoration: none;
 display: flex;
+cursor: pointer;
 }
 
 .footer-title {
-color: #000000a3;
+color: #292D34;
+opacity: 64%;
 text-align: center;
-letter-spacing: -.02em;
+letter-spacing: .01em;
 margin-top: 0;
 margin-bottom: 0;
 font-size: 16px;
 font-weight: 500;
 line-height: 20px;
 text-decoration: none;
+font-family: 'Sf-Pro';
+transition: opacity 400ms ease, transform 400ms ease;
+}
+
+.footer-title a {
+color: #292D34;
+text-decoration: none;
+}
+
+.footer-item-one:hover .footer-title {
+    opacity: 1;
 }
 
 .footer-icon {
@@ -223,6 +240,7 @@ font-size: 14px;
 font-weight: 500;
 line-height: 100%;
 text-decoration: none;
+font-family: 'Sf-Pro';
 }
 
 .hero-countanir {

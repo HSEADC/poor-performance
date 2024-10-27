@@ -81,6 +81,7 @@ module.exports = {
     }),
 
 
+
     new HtmlWebpackPlugin({
       template: './src/documentation.html',
       filename: './documentation.html'
@@ -89,6 +90,11 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/gallery.html',
       filename: './gallery.html'
+    }),
+
+    new HtmlWebpackPlugin({
+      template: './src/about.html',
+      filename: './about.html'
     }),
 
     new HtmlWebpackPlugin({
