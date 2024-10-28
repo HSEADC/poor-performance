@@ -94,7 +94,7 @@ module.exports = {
 
     new HtmlWebpackPlugin({
       template: './src/about.html',
-      filename: './about.html'
+      filename: 'about.html'
     }),
 
     new HtmlWebpackPlugin({
