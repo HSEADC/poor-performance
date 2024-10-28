@@ -137,7 +137,18 @@ display: flex;
 .telegram-video{
     width: 24px;
     height: 24px;
-    border-radius: 1000px
+    border-radius: 1000px;
+}
+
+.telegram-video-blur{
+    width: 24px;
+    height: 24px;
+    border-radius: 2000px;
+    filter: blur(8px);
+    position: absolute;
+    right: 12px;
+    bottom: 7px;
+    z-index: -1;
 }
 
 input[type="email"] {
@@ -230,6 +241,17 @@ max-width: 360px;
 text-decoration: none;
 display: flex;
 }
+
+.right-column-container-article {
+    grid-row-gap: 24px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 720px;
+    text-decoration: none;
+    display: flex;
+    }
 
 .metaphor-container {
 grid-row-gap: 10px;
