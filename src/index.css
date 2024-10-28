@@ -5,6 +5,10 @@
 @import 'stylesheets/index.scss';
 
 
+body{
+    background-color: #EBEBEB;
+}
+
 h2{
     font-family: 'Sf-Pro';
     color: #292D34;
@@ -81,8 +85,8 @@ background-color: #fff;
 border-radius: 46px;
 justify-content: space-between;
 align-items: center;
-width: 100%;
-max-width: 240px;
+/* width: 100%;
+max-width: 240px; */
 text-decoration: none;
 display: flex;
 }
@@ -97,6 +101,11 @@ padding-bottom: 14px;
 padding-left: 20px;
 text-decoration: none;
 display: flex;
+}
+
+.email-input-container-item{
+    border-color: #fff;
+    border: 1px;
 }
 
 .checkbox-container {
@@ -118,16 +127,21 @@ display: flex;
     align-items: center;
     padding-top: 14px;
     padding-bottom: 14px;
+    padding-right: 14px;
     padding-left: 20px;
     text-decoration: none;
     display: flex;
+
+}
+
+.telegram-video{
+    width: 24px;
+    height: 24px;
+    border-radius: 1000px
 }
 
 input[type="email"] {
-    border: 1px solid #ccc;
-    border-radius: 24px;
-    padding: var(--14, 14px) var(--0, 0px) var(--14, 14px) var(--20, 20px);
-
+    border: 1px solid #ffffff;
     outline: none;
     flex: 1; /* чтобы input занимал все доступное пространство */
 }
@@ -362,17 +376,16 @@ display: flex;
 }
 
 button {
-    background-color: #007bff; /* цвет кнопки */
-    color: white; /* цвет текста на кнопке */
+    background-color: rgba(255, 255, 255, 0);
     border: none;
-    border-radius: 24px;
-    padding: 10px 20px;
     cursor: pointer;
-    margin-left: 10px; /* отступ между полем ввода и кнопкой */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 button:hover {
-    background-color: #0056b3; /* цвет кнопки при наведении */
+    opacity: 60%;
 }
 
 
@@ -528,6 +541,7 @@ position: absolute;
     padding-top: 22px;
     padding-bottom: 22px;
     padding-left: 28px;
+    padding-right: 22px;
 }
 
 .checkbox-container {
