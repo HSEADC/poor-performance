@@ -580,6 +580,15 @@ position: absolute;
     padding-right: 22px;
 }
 
+.container{
+    padding-top: 36px;
+    grid-row-gap: 24px;
+}
+
+.content-container{
+    grid-row-gap: 20px;
+}
+
 .checkbox-container {
     padding: 16px 14px 16px 12px;
 }
