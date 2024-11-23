@@ -19,6 +19,33 @@ h2{
 
 }
 
+.linked-text{
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+    text-decoration-skip-ink: auto;
+    text-decoration-color: rgba(0, 0, 0, 0.32);
+    text-decoration-thickness: 6%; /* 0.84px */
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+    color: #1f2937;
+    opacity: 64%;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 130%;
+    font-family: 'Sf-Pro';
+    text-align: center;
+    transition: opacity 400ms ease, transform 400ms ease;
+}
+
+.linked-text:hover{
+    opacity: 100%;
+    transition: opacity 400ms ease, transform 400ms ease;
+    text-decoration-color: rgba(0, 0, 0, 0.64);
+}
+
+
 .container {
     grid-row-gap: 32px;
     flex-direction: column;
@@ -74,7 +101,6 @@ grid-column-gap: 6px;
 flex: 0 auto;
 justify-content: flex-start;
 align-items: center;
-text-decoration: none;
 display: flex;
 }
 
@@ -285,7 +311,14 @@ font-weight: 400;
 line-height: 130%;
 text-decoration: none;
 text-align: left;
+transition: opacity 400ms ease, transform 400ms ease;
 }
+
+.description :hover {
+    opacity: 100%;
+    transition: opacity 400ms ease, transform 400ms ease;
+}
+
 
 .description-main {
 color: #1f2937;
@@ -416,12 +449,15 @@ button {
     border: none;
     cursor: pointer;
     display: flex;
+    opacity: 64%;
     flex-direction: row;
     align-items: center;
+    transition: opacity 400ms ease, transform 400ms ease;
 }
 
 button:hover {
-    opacity: 60%;
+    opacity: 100%;
+    transition: opacity 400ms ease, transform 400ms ease;
 }
 
 
@@ -510,6 +546,7 @@ text-decoration: none;
 
 .footer-item-one:hover .footer-title {
     opacity: 1;
+    transition: opacity 400ms ease, transform 400ms ease;
 }
 
 .footer-icon {
@@ -547,7 +584,8 @@ display: flex;
 }
 
 .description-2 {
-color: #00000052;
+color: #292D34;
+opacity: 48%;
 text-align: center;
 letter-spacing: .02em;
 margin-top: 0;
@@ -557,6 +595,12 @@ font-weight: 500;
 line-height: 100%;
 text-decoration: none;
 font-family: 'Sf-Pro';
+transition: opacity 400ms ease, transform 400ms ease;
+}
+
+.description-2:hover {
+    opacity: 1;
+    transition: opacity 400ms ease, transform 400ms ease;
 }
 
 .hero-countanir {
