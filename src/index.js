@@ -16,9 +16,9 @@ function createBrownNoise(audioCtx) {
         const output = e.outputBuffer.getChannelData(0);
         for (let i = 0; i < bufferSize; i++) {
             const white = Math.random() * 2 - 1; // Генерация белого шума
-            output[i] = (lastOut + 0.02 * white) / 1.02; // Преобразование в коричневый шум
+            output[i] = (lastOut + 0.03 * white) / 1.03; // Преобразование в коричневый шум
             lastOut = output[i];
-            output[i] *= 1; // Увеличение громкости
+            output[i] *= 2; // Увеличение громкости
         }
     };
     return node;
