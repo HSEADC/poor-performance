@@ -95,22 +95,28 @@ module.exports = {
     }),
 
     new HtmlWebpackPlugin({
-      template: './src/article.html',
-      filename: './article.html',
+      template: './src/articles.html',
+      filename: './articles.html',
       meta: { viewport: 'width=device-width, initial-scale=1' }
     }),
 
-    new HtmlWebpackPlugin({
-      template: './src/articles/article-item.html',
-      filename: './articles/article-item.html',
-      meta: { viewport: 'width=device-width, initial-scale=1' }
-    }),
+    // new HtmlWebpackPlugin({
+    //   template: './src/article.html',
+    //   filename: './article.html',
+    //   meta: { viewport: 'width=device-width, initial-scale=1' }
+    // }),
 
-    new HtmlWebpackPlugin({
-      template: '/src/articles.html',
-      filename: '/articles.html',
-      meta: { viewport: 'width=device-width, initial-scale=1' }
-    }),
+    // new HtmlWebpackPlugin({
+    //   template: './src/articles/article-item.html',
+    //   filename: './articles/article-item.html',
+    //   meta: { viewport: 'width=device-width, initial-scale=1' }
+    // }),
+
+    // new HtmlWebpackPlugin({
+    //   template: '/src/articles.html',
+    //   filename: '/articles.html',
+    //   meta: { viewport: 'width=device-width, initial-scale=1' }
+    // }),
 
 
     new HtmlWebpackPlugin({
