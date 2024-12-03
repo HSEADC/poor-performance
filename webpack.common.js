@@ -95,12 +95,6 @@ module.exports = {
     }),
 
     new HtmlWebpackPlugin({
-      template: './src/about.html',
-      filename: './about.html',
-      meta: { viewport: 'width=device-width, initial-scale=1' }
-    }),
-
-    new HtmlWebpackPlugin({
       template: './src/article.html',
       filename: './article.html',
       meta: { viewport: 'width=device-width, initial-scale=1' }
@@ -111,6 +105,13 @@ module.exports = {
       filename: './articles/article-item.html',
       meta: { viewport: 'width=device-width, initial-scale=1' }
     }),
+
+    new HtmlWebpackPlugin({
+      template: '/src/articles.html',
+      filename: '/articles.html',
+      meta: { viewport: 'width=device-width, initial-scale=1' }
+    }),
+
 
     new HtmlWebpackPlugin({
       template: './src/cards/card-item.html',
@@ -125,8 +126,20 @@ module.exports = {
     }),
 
     new HtmlWebpackPlugin({
+      template: '/src/interviews.html',
+      filename: '/interviews.html',
+      meta: { viewport: 'width=device-width, initial-scale=1' }
+    }),
+
+    new HtmlWebpackPlugin({
       template: './src/tutorials/tutorial-item.html',
       filename: './tutorials/tutorial-item.html',
+      meta: { viewport: 'width=device-width, initial-scale=1' }
+    }),
+
+    new HtmlWebpackPlugin({
+      template: '/src/tutorials.html',
+      filename: '/tutorials.html',
       meta: { viewport: 'width=device-width, initial-scale=1' }
     }),
 
