@@ -107,6 +107,12 @@ module.exports = {
     }),
 
     new HtmlWebpackPlugin({
+      template: './src/style-guide.html',
+      filename: './style-guide.html',
+      meta: { viewport: 'width=device-width, initial-scale=1' }
+    }),
+
+    new HtmlWebpackPlugin({
       template: './src/tutorials.html',
       filename: './tutorials.html',
       meta: { viewport: 'width=device-width, initial-scale=1' }
