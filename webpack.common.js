@@ -124,6 +124,12 @@ module.exports = {
       meta: { viewport: 'width=device-width, initial-scale=1' }
     }),
 
+    new HtmlWebpackPlugin({
+      template: './src/community.html',
+      filename: './community.html',
+      meta: { viewport: 'width=device-width, initial-scale=1' }
+    }),
+
     // new HtmlWebpackPlugin({
     //   template: './src/article.html',
     //   filename: './article.html',
@@ -155,6 +161,12 @@ module.exports = {
       meta: { viewport: 'width=device-width, initial-scale=1' }
     }),
 
+    new HtmlWebpackPlugin({
+      template: './src/hello-world.html',
+      filename: './hello-world.html',
+      meta: { viewport: 'width=device-width, initial-scale=1' }
+    }),
+
     // new HtmlWebpackPlugin({
     //   template: '/src/interviews.html',
     //   filename: '/interviews.html',
@@ -173,6 +185,8 @@ module.exports = {
     //   meta: { viewport: 'width=device-width, initial-scale=1' }
     // }),
     //
+
+
     // Partials
     new HtmlWebpackPartialsPlugin([
       {
@@ -207,7 +221,6 @@ module.exports = {
         priority: 'replace'
       }
     ])
-
   ],
   optimization: {
     // Минификация CSS - раскомментируйте, если хотите использовать
