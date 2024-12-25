@@ -118,6 +118,12 @@ module.exports = {
       meta: { viewport: 'width=device-width, initial-scale=1' }
     }),
 
+    new HtmlWebpackPlugin({
+      template: './src/about.html',
+      filename: './about.html',
+      meta: { viewport: 'width=device-width, initial-scale=1' }
+    }),
+
     // new HtmlWebpackPlugin({
     //   template: './src/article.html',
     //   filename: './article.html',
@@ -166,16 +172,16 @@ module.exports = {
     //   filename: '/tutorials.html',
     //   meta: { viewport: 'width=device-width, initial-scale=1' }
     // }),
-
+    //
     // Partials
-    // new HtmlWebpackPartialsPlugin([
-    //   {
-    //     path: path.join(__dirname, './src/partials/analytics.html'),
-    //     location: 'analytics',
-    //     template_filename: '*',
-    //     priority: 'replace'
-    //   }
-    // ]),
+    new HtmlWebpackPartialsPlugin([
+      {
+        path: path.join(__dirname, './src/partials/footer.html'),
+        location: 'footer',
+        template_filename: '*',
+        priority: 'replace'
+      }
+    ]),
     new HtmlWebpackPartialsPlugin([
       {
         path: path.join(__dirname, './src/partials/footer.html'),
@@ -183,7 +189,25 @@ module.exports = {
         template_filename: '*',
         priority: 'replace'
       }
+    ]),
+
+    new HtmlWebpackPartialsPlugin([
+      {
+        path: path.join(__dirname, './src/partials/header-menu.html'),
+        location: 'header-menu',
+        template_filename: '*',
+        priority: 'replace'
+      }
+    ]),
+    new HtmlWebpackPartialsPlugin([
+      {
+        path: path.join(__dirname, './src/partials/header-menu.html'),
+        location: 'header-menuPartials',
+        template_filename: '*',
+        priority: 'replace'
+      }
     ])
+
   ],
   optimization: {
     // Минификация CSS - раскомментируйте, если хотите использовать
