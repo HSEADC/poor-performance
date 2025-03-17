@@ -1,5 +1,14 @@
-@import 'stylesheets/reset.scss';
-@import 'stylesheets/vars.scss';
-@import 'stylesheets/fonts.scss';
-@import 'stylesheets/basics.scss';
-@import 'stylesheets/index.scss';
+@import "stylesheets/reset.scss";
+@import "stylesheets/index.scss";
+
+/* Components */
+@import "stylesheets/components/00_quarqs.scss";
+@import "stylesheets/components/01_atoms.scss";
+@import "stylesheets/components/02_molecules.scss";
+@import "stylesheets/components/03_wrappers.scss";
+@import "stylesheets/components/04_collections.scss";
+@import "stylesheets/components/05_organisms.scss";
+@import "stylesheets/components/06_super-organisms.scss";
+
+/* Resposive */
+@import "stylesheets/responsive.scss";

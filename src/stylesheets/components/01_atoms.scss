@@ -1,0 +1,109 @@
+.A_3dCard {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+@font-face {
+  font-family: "PP Neue Montreal Medium";
+  src: url("../../fonts/PPNeueMontreal-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PP Neue Montreal SemiBold";
+  src: url("../../fonts/PPNeueMontreal-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+.A_Heading1 {
+  font-family: "PP Neue Montreal SemiBold";
+  font-size: 71px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 85%; /* 60.35px */
+  letter-spacing: -1.42px;
+  text-transform: lowercase;
+}
+.A_Heading2 {
+  font-family: "PP Neue Montreal SemiBold";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 85%; /* 40.8px */
+  letter-spacing: -0.96px;
+  text-transform: lowercase;
+}
+.A_Heading3 {
+  font-family: "PP Neue Montreal";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 85%; /* 23.8px */
+  letter-spacing: -0.28px;
+  text-transform: lowercase;
+}
+.A_LabelLarge {
+  font-family: "PP Neue Montreal Medium";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 115%; /* 23px */
+  letter-spacing: 0.4px;
+}
+.A_LabelMedium {
+  font-family: "PP Neue Montreal Medium";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 115%; /* 18.4px */
+  letter-spacing: 0.32px;
+}
+.A_LabelSmall {
+  font-family: "PP Neue Montreal Medium";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 115%; /* 16.1px */
+  letter-spacing: 0.14px;
+}
+.A_ParagraphBody {
+  font-family: "PP Neue Montreal Medium";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 28px */
+  letter-spacing: 0.4px;
+}
+.A_ParagraphSmall {
+  font-family: "PP Neue Montreal Medium";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 16.8px */
+  letter-spacing: 0.12px;
+}
+
+.A_Capture {
+  font-family: "PP Neue Montreal Medium";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 115%; /* 13.8px */
+  letter-spacing: 0.12px;
+}
+
+.A_MenuItem {
+  grid-column-gap: 10px;
+  -webkit-backdrop-filter: blur(40px);
+  backdrop-filter: blur(40px);
+  background-color: #cbcbcc7a;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  padding: 2px 3px;
+  text-decoration: none;
+  display: flex;
+}

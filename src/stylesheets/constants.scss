@@ -1,0 +1,54 @@
+//global colors
+$background: #f7f8fa;
+$yellow: #ffff00;
+$green: #b2ff00;
+$green_64: rgba(247, 248, 250, 0.64);
+$green_24: rgba(247, 248, 250, 0.24);
+$gray: #cbcbcc;
+$gray_48: rgba(203, 203, 204, 0.48);
+$black: #0d0f11;
+$black_64: rgba(13, 15, 17, 0.64);
+$black_48: rgba(13, 15, 17, 0.48);
+$black_6: rgba(13, 15, 17, 0.06);
+$white: #ffffff;
+$white_64: rgba(255, 255, 255, 0.64);
+$white_48: rgba(255, 255, 255, 0.48);
+$white_24: rgba(255, 255, 255, 0.24);
+
+//semantic
+:root {
+  //shape
+  --shape-primary: #{$black};
+  --shape-secondary: #{$black_48};
+  --shape-accent-primary: #{$green};
+  --shape-brand-secondary: #{$yellow};
+  --shape-white: #{$white};
+
+  //type
+  --type-primary: #{$black};
+  --type-secondary: #{$black_64};
+  --type-white: #{$white};
+  --type-white_64: #{$white_64};
+  --type-white_48: #{$white_48};
+  --type-white_24: #{$white_24};
+  --type-brand: #{$green};
+
+  //stroke
+  --stroke-primary: #{$black};
+  --stroke-white: #{$white};
+  --stroke-brand: #{$green};
+  --stroke-brand-secondary: #{$yellow};
+
+  //surface
+  --surface-black_64: #{$black_64};
+  --surface-black_48: #{$black_64};
+  --surface-black_6: #{$black_6};
+  --surface-brand-secondary: #{$yellow};
+  --surface-brand-primary: #{$green};
+  --surface-brand-primary_64: #{$green_64};
+  --surface-brand-primary_24: #{$green_24};
+  --surface-white: #{$white};
+  --surface-white_24: #{$white_24};
+  --surface-white_48: #{$white_48};
+  --surface-background: #{$background};
+}

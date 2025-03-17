@@ -1,0 +1,15 @@
+.O_Menu {
+  grid-row-gap: 12px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 226px;
+  height: 98%;
+  padding-bottom: 12px;
+  text-decoration: none;
+  display: flex;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+}
