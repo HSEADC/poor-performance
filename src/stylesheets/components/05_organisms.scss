@@ -1,15 +1,28 @@
-.O_Menu {
-  grid-row-gap: 12px;
+.O_IventCardTop {
+  grid-row-gap: 10px;
+  background-color: #fff;
+  background-image: url("https://cdn.prod.website-files.com/65f48127807333cb199c5d35/660585780b3633f8581aaaa8_gra_photo.png");
+  background-position: 0 0;
+  background-size: cover;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
   width: 100%;
-  max-width: 226px;
-  height: 98%;
-  padding-bottom: 12px;
+  height: 100vh;
+  margin-bottom: -64px;
   text-decoration: none;
   display: flex;
-  position: absolute;
-  top: 12px;
-  right: 12px;
+  position: relative;
+  overflow: hidden;
+}
+
+.O_ItemCardBottom {
+  grid-column-gap: 12px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  padding: 12px;
+  text-decoration: none;
+  display: flex;
+  position: relative;
 }

@@ -98,8 +98,8 @@
 
 .A_MenuItem {
   grid-column-gap: 10px;
-  -webkit-backdrop-filter: blur(40px);
   backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(40px);
   background-color: var(--surface-gray_48);
   justify-content: flex-start;
   align-items: flex-start;
@@ -107,11 +107,19 @@
   padding: 2px 3px;
   text-decoration: none;
   display: flex;
+  transition: all 250ms ease-in-out;
+  cursor: pointer;
 
   &:hover {
+    background-color: var(--surface-brand-primary);
   }
 
   &:active {
+    background-color: var(--surface-gray_48);
+  }
+
+  &:focus {
+    background-color: var(--surface-brand-primary);
   }
 }
 
@@ -122,4 +130,28 @@
   height: 72px;
   position: absolute;
   overflow: visible;
+  right: -20px;
+}
+
+.A_ParagraphAlt {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  text-decoration: none;
+  display: flex;
+}
+
+.A_CircleBlur {
+  object-fit: cover;
+  position: absolute;
+  top: 250px;
+  left: 0;
+  overflow: visible;
+}
+
+.A_Circle {
+  border-radius: 1000px;
+  width: 88px;
+  height: 88px;
 }

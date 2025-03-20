@@ -2,18 +2,88 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  width: 100%;
+  max-width: 226px;
   height: 100%;
   display: flex;
+  position: fixed;
+  top: 12px;
+  right: 18px;
+  z-index: 2;
 }
 
 .W_NavigationBottom {
-  mix-blend-mode: difference;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-end;
-  width: 100%;
+  max-width: 226px;
   text-decoration: none;
   display: flex;
-  position: relative;
+  position: fixed;
+  bottom: 12px;
+  right: 12px;
+  mix-blend-mode: difference;
+  z-index: 2;
+}
+
+.W_IventCardText {
+  grid-column-gap: 12px;
+  grid-row-gap: 32px;
+  background-image: linear-gradient(0deg, #0000, #000);
+  flex-flow: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  padding: 40px 12px 144px;
+  text-decoration: none;
+  display: flex;
+  color: var(--type-white);
+}
+
+.W_MainText {
+  grid-column-gap: 10px;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  padding-left: 60px;
+  text-decoration: none;
+  display: flex;
+}
+
+.W_ItemCardBottomText {
+  grid-row-gap: 48px;
+  border-radius: 405px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 374px;
+  text-decoration: none;
+  display: flex;
+}
+
+.W_Eyes {
+  grid-column-gap: 10px;
+  flex: 0 auto;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 4px;
+  text-decoration: none;
+  display: flex;
+}
+
+.W_Circles {
+  grid-column-gap: 12px;
+  flex: 0 auto;
+  justify-content: flex-start;
+  align-items: flex-end;
+  height: 88px;
+  text-decoration: none;
+  display: flex;
+}
+
+.W_IventCardTextTop {
+  grid-column-gap: 12px;
+  grid-row-gap: 12px;
+  flex-flow: row;
+  display: flex;
 }

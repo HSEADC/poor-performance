@@ -2,31 +2,31 @@
   --background: #f7f8fa;
   --yellow: #ffff00;
   --green: #b2ff00;
-  --green-64: rgba(247, 248, 250, 0.64);
-  --green-24: rgba(247, 248, 250, 0.24);
+  --green_64: rgba(247, 248, 250, 0.64);
+  --green_24: rgba(247, 248, 250, 0.24);
   --gray: #cbcbcc;
-  --gray-48: rgba(203, 203, 204, 0.48);
+  --gray_48: rgba(203, 203, 204, 0.48);
   --black: #0d0f11;
-  --black-64: rgba(13, 15, 17, 0.64);
-  --black-48: rgba(13, 15, 17, 0.48);
-  --black-6: rgba(13, 15, 17, 0.06);
+  --black_64: rgba(13, 15, 17, 0.64);
+  --black_48: rgba(13, 15, 17, 0.48);
+  --black_6: rgba(13, 15, 17, 0.06);
   --white: #ffffff;
-  --white-64: rgba(255, 255, 255, 0.64);
-  --white-48: rgba(255, 255, 255, 0.48);
-  --white-24: rgba(255, 255, 255, 0.24);
+  --white_64: rgba(255, 255, 255, 0.64);
+  --white_48: rgba(255, 255, 255, 0.48);
+  --white_24: rgba(255, 255, 255, 0.24);
 
   --shape-primary: var(--black);
-  --shape-secondary: var(--black-48);
+  --shape-secondary: var(--black_48);
   --shape-accent-primary: var(--green);
   --shape-brand-secondary: var(--yellow);
   --shape-white: var(--white);
 
   --type-primary: var(--black);
-  --type-secondary: var(--black-64);
+  --type-secondary: var(--black_64);
   --type-white: var(--white);
-  --type-white-64: var(--white-64);
-  --type-white-48: var(--white-48);
-  --type-white-24: var(--white-24);
+  --type-white_64: var(--white_64);
+  --type-white_48: var(--white_48);
+  --type-white_24: var(--white_24);
   --type-brand: var(--green);
 
   --stroke-primary: var(--black);
@@ -34,16 +34,16 @@
   --stroke-brand: var(--green);
   --stroke-brand-secondary: var(--yellow);
 
-  --surface-black-64: var(--black-64);
-  --surface-black-48: var(--black-48);
-  --surface-black-6: var(--black-6);
-  --surface-gray-48: var(--gray-48);
+  --surface-black_64: var(--black_64);
+  --surface-black_48: var(--black_48);
+  --surface-black_6: var(--black_6);
+  --surface-gray_48: var(--gray_48);
   --surface-brand-secondary: var(--yellow);
   --surface-brand-primary: var(--green);
-  --surface-brand-primary-64: var(--green-64);
-  --surface-brand-primary-24: var(--green-24);
+  --surface-brand-primary_64: var(--green_64);
+  --surface-brand-primary_24: var(--green_24);
   --surface-white: var(--white);
-  --surface-white-24: var(--white-24);
-  --surface-white-48: var(--white-48);
+  --surface-white_24: var(--white_24);
+  --surface-white_48: var(--white_48);
   --surface-background: var(--background);
 }

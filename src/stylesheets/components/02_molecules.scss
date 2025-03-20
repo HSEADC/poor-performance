@@ -3,7 +3,17 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  width: 100%;
   text-decoration: none;
   display: flex;
+}
+
+.M_ItemCardBottomHeading {
+  grid-column-gap: 8px;
+  mix-blend-mode: difference;
+  flex: 0 auto;
+  justify-content: center;
+  align-items: flex-start;
+  text-decoration: none;
+  display: flex;
+  color: var(--type-white);
 }

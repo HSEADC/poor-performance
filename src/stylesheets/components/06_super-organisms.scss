@@ -1,0 +1,15 @@
+.S_IventCard {
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  background-color: #0d0f11a3;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  height: calc(100vh + 52px);
+  text-decoration: none;
+  display: flex;
+  overflow: hidden;
+  box-shadow: 0 32px 60px #b2ff00;
+  margin-bottom: -52px;
+}

@@ -1,10 +1,11 @@
 .C_TimeInfo {
   justify-content: space-between;
   align-items: center;
-  width: 180px;
+  width: 130px;
   padding: 10px 32px;
   text-decoration: none;
   display: flex;
+  color: var(--type-white);
 }
 
 .C_Navigation {
@@ -12,6 +13,23 @@
   justify-content: flex-start;
   align-items: flex-start;
   width: 100%;
+  text-decoration: none;
+  display: flex;
+}
+
+.C_IventCardsGrid {
+  display: flex;
+  flex-direction: column;
+}
+
+.C_CircleList {
+  grid-column-gap: 12px;
+  object-fit: cover;
+  flex-flow: row;
+  flex: 0 auto;
+  justify-content: flex-start;
+  align-items: center;
+  padding-bottom: 44px;
   text-decoration: none;
   display: flex;
 }
