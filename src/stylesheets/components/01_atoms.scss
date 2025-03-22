@@ -96,6 +96,39 @@
   letter-spacing: 0.12px;
 }
 
+a,
+a:visited,
+a:hover,
+a:focus {
+  text-decoration: none;
+  color: var(--type-primary);
+}
+
+.A_ProfileImg {
+  box-sizing: border-box;
+  aspect-ratio: auto;
+  border-style: solid;
+  border-width: undefinedpx;
+  object-fit: contain;
+  border-color: #fff3;
+  height: auto;
+  position: relative;
+  top: 0;
+  overflow: clip;
+}
+
+.A_Bentocard {
+  box-sizing: content-box;
+  object-fit: cover;
+  width: 50%;
+  overflow: auto;
+}
+
+.A_Profile {
+  aspect-ratio: 1;
+  width: 100%;
+}
+
 .A_MenuItem {
   grid-column-gap: 10px;
   backdrop-filter: blur(40px);

@@ -103,6 +103,11 @@ module.exports = {
       filename: "./ucheba.html",
     }),
 
+    new HtmlWebpackPlugin({
+      template: "./src/tusovochka.html",
+      filename: "./tusovochka.html",
+    }),
+
     // new HtmlWebpackPlugin({
     //   template: "./src/interviews.html",
     //   filename: "./interviews.html",
@@ -116,6 +121,11 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: "./src/style-guide.html",
       filename: "./style-guide.html",
+    }),
+
+    new HtmlWebpackPlugin({
+      template: "./src/ivents.html",
+      filename: "./ivents.html",
     }),
 
     // new HtmlWebpackPlugin({

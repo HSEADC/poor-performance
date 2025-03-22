@@ -26,3 +26,68 @@
   display: flex;
   position: relative;
 }
+
+.O_ColabCardArticle {
+  grid-column-gap: 12px;
+  justify-content: flex-start;
+  align-items: center;
+  max-width: 940px;
+  text-decoration: none;
+  display: flex;
+  position: relative;
+}
+
+.O_ColabCardWorkShop {
+  background-image: url("https://cdn.prod.website-files.com/65f48127807333cb199c5d35/67def0b9a45d51194be8148f_O_ColabCardWorkshop.png");
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 940px;
+  height: 464px;
+  min-height: 464px;
+  text-decoration: none;
+  display: flex;
+  overflow: hidden;
+}
+
+.O_ColabCardWorkshopTEST {
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+
+  height: 464px;
+
+  text-decoration: none;
+  display: flex;
+  overflow: hidden;
+}
+
+.O_ColabCardInterview {
+  grid-column-gap: 12px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 940px;
+  height: 464px;
+  text-decoration: none;
+  display: flex;
+  position: relative;
+}
+
+.A_CardInterviewCover {
+  background-color: #191a1e;
+  background-image: none;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 464px;
+  min-height: 464px;
+}

@@ -17,3 +17,23 @@
   display: flex;
   color: var(--type-white);
 }
+
+.M_WorkCard {
+  grid-row-gap: 10px;
+  background-color: #d9d9d9;
+  background-image: linear-gradient(#0000 0%, #000 100%),
+    url("https://cdn.prod.website-files.com/65f48127807333cb199c5d35/67def0b964a9251a18b7367e_M_WorkCard.png");
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 464px;
+  height: 226px;
+  min-height: 226px;
+
+  text-decoration: none;
+  display: flex;
+}

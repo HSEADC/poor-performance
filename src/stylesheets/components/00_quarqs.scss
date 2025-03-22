@@ -1,0 +1,41 @@
+.Q_DotsTop {
+  display: flex;
+  width: 100vw;
+  padding: 12px;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 0;
+}
+
+.Q_DotsBottom {
+  display: flex;
+  width: 100vw;
+  padding: 12px;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+}
+
+.Q_Link {
+  grid-row-gap: 10px;
+  mix-blend-mode: difference;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-decoration: none;
+  display: flex;
+  color: var(--type-white);
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: auto;
+  text-decoration-thickness: 3%; /* 0.7px */
+  text-underline-offset: 9.5%; /* 2.66px */
+  text-underline-position: from-font;
+  text-transform: lowercase;
+  cursor: pointer;
+}
+
+.grid-test {
+}
