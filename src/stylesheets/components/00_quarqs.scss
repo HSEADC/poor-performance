@@ -1,21 +1,7 @@
-.Q_DotsTop {
-  display: flex;
-  width: 100vw;
-  padding: 12px;
-  justify-content: space-between;
-  align-items: center;
-  position: absolute;
-  top: 0;
-}
-
-.Q_DotsBottom {
-  display: flex;
-  width: 100vw;
-  padding: 12px;
-  justify-content: space-between;
-  align-items: center;
-  position: absolute;
-  bottom: 0;
+.Q_Dot {
+  width: 6px;
+  height: 6px;
+  background-color: var(--shape-white);
 }
 
 .Q_Link {
@@ -37,5 +23,7 @@
   cursor: pointer;
 }
 
-.grid-test {
+.Q_Icon_24 {
+  width: 24px;
+  height: 24px;
 }

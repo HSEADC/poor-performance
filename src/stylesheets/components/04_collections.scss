@@ -51,6 +51,7 @@
   align-items: flex-start;
   width: 125px;
   padding-top: 16px;
+  padding-bottom: 16px;
   text-decoration: none;
   display: flex;
 }
@@ -70,8 +71,82 @@
   justify-content: flex-start;
   align-items: flex-start;
   width: 100%;
+  max-width: 940px;
   text-decoration: none;
   display: flex;
+}
+
+.C_DotsTop {
+  display: flex;
+  width: calc(100vw - 24px);
+  padding: 12px;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  mix-blend-mode: difference;
+  pointer-events: none;
+}
+
+.C_DotsBottom {
+  display: flex;
+  width: calc(100vw - 24px);
+  padding: 12px;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  mix-blend-mode: difference;
+  pointer-events: none;
+}
+
+.C_DotsCenter {
+  display: flex;
+  width: calc(100vw - 24px);
+  padding: 12px;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 50%;
+  bottom: auto;
+  left: 0px;
+  mix-blend-mode: difference;
+  pointer-events: none;
+}
+
+.C_Tab {
+  grid-column-gap: 88px;
+  mix-blend-mode: difference;
+  flex: 0 auto;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 2px 32px;
+  text-decoration: none;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.C_Hero {
+  grid-column-gap: 12px;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+.C_Social {
+  height: calc(100% - 24px);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 12px;
+  gap: 8px;
 }
 
 .C_ColabCardArticleCovers {
@@ -97,4 +172,17 @@
   align-items: center;
   text-decoration: none;
   display: flex;
+}
+
+.C_SmallLearningCardGrid {
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: 1fr 1fr;
+  grid-column: span 8;
+  grid-auto-columns: 1fr;
+  gap: 12px;
+  justify-content: flex-start;
+  align-items: flex-end;
+  width: 100%;
+  height: 100%;
 }

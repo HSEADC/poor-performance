@@ -21,8 +21,66 @@
   position: fixed;
   bottom: 12px;
   right: 12px;
-  mix-blend-mode: difference;
   z-index: 2;
+  mix-blend-mode: difference;
+}
+
+.W_InfoLineEnd {
+  grid-column-gap: 12px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-decoration: none;
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(100px, 1fr)
+  ); /* Авто-колонки */
+
+  grid-column: span 12;
+}
+
+.W_InfoLineHor {
+  display: grid;
+  grid-template-columns: repeat(24, 1fr); /* 6 гибких колонок */
+  gap: 12px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  align-items: center;
+  width: 100%;
+}
+
+.W_End {
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: calc(100% - 24px);
+  height: calc(100vh - 24px);
+  padding: 12px;
+  display: flex;
+  position: relative;
+}
+
+.W_Form {
+  grid-row-gap: 37px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 0 auto;
+  padding-top: 128px;
+  padding-bottom: 128px;
+  text-decoration: none;
+  display: flex;
+}
+
+.W_HeadingHero {
+  grid-column-gap: 67px;
+  flex: 0 auto;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-left: 24px;
+  padding-right: 24px;
+  text-decoration: none;
+  display: flex;
 }
 
 .W_Profile {
@@ -66,7 +124,7 @@
   display: flex;
 }
 
-.W_MainTextwTagYou {
+.W_WorkshopTextStartYou {
   grid-column-gap: 10px;
   justify-content: flex-start;
   align-items: center;
@@ -74,6 +132,10 @@
   padding-left: 60px;
   text-decoration: none;
   display: flex;
+}
+
+.Fill {
+  width: 100%;
 }
 
 .W_ColabCardWorkShopTextYou {
@@ -88,7 +150,7 @@
   display: flex;
 }
 
-.W_ColabcardDorksopTextInfo {
+.W_ColabcardWorksopTextInfo {
   grid-row-gap: 12px;
   flex-direction: column;
   justify-content: flex-start;
@@ -99,6 +161,12 @@
   padding-bottom: 12px;
   text-decoration: none;
   display: flex;
+}
+
+.W_WorksopTextInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .W_BentoStart {
@@ -193,4 +261,57 @@
   grid-row-gap: 12px;
   flex-flow: row;
   display: flex;
+}
+
+.W_MediumLearningCardInfo {
+  grid-column: span 8;
+  display: grid;
+
+  grid-template-rows: 1fr auto; /* Верхний элемент, пустое место, нижний элемент */
+  grid-template-columns: repeat(8, 1fr);
+  height: 100%;
+}
+
+.W_MediumLearningCardInfoHeading {
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+  grid-column: span 8;
+}
+
+.W_SmallLearningCardInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  grid-column: span 4;
+}
+
+.W_SmallLearningCardInfoHeading {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.W_MediumLearningCardInfoParagraph {
+  display: grid;
+  gap: 12px;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 6;
+  position: relative;
+  grid-column: span 6;
+}
+
+.W_SmallLearningCardRow {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  width: 100%;
+  margin-bottom: 128px;
+  height: auto;
+}
+
+.W_SmallLearningCardInfoParagraph {
+  position: relative;
+  display: block;
+  grid-column: 4;
 }

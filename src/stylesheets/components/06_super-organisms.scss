@@ -19,9 +19,55 @@
   grid-row-gap: 5%;
   flex-flow: row;
   justify-content: space-between;
-  width: 100%;
+  width: calc(100vw - 24px);
   padding: 24px 12px;
   text-decoration: none;
   display: flex;
   flex-direction: row;
+}
+
+.S_IndexContent {
+  grid-row-gap: 24px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  text-decoration: none;
+  display: flex;
+}
+
+.S_UchebaGrid {
+  display: grid;
+  grid-auto-rows: auto;
+  padding: 36px 12px 12px 12px;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 0px 12px;
+  align-self: stretch;
+  flex-wrap: wrap;
+}
+.S_MediumLearningCard {
+  display: grid;
+  grid-template-columns: repeat(24, 1fr);
+  gap: 12px;
+  width: 100%;
+  margin-bottom: 160px;
+  height: calc(100vh - 78px);
+}
+
+.S_SmallLearningCard {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 12px;
+  height: 50vh;
+  margin-bottom: 128px;
+}
+
+.S_SmallLearningCardMask {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 12px;
+  height: 50vh;
+  margin-bottom: 160px;
 }

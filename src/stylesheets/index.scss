@@ -1,0 +1,30 @@
+body {
+  background-color: var(--surface-background);
+}
+
+.Secondary {
+  color: var(--type-secondary);
+}
+
+.fill {
+  width: 100%;
+}
+
+.active-tab {
+  color: var(--type-white);
+}
+
+.default-tab {
+  color: var(--type-white_48);
+}
+
+.Crop {
+  display: -webkit-box;
+  -webkit-line-clamp: 6; /* Обрезает на 6 строке */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.hide {
+  opacity: 0;
+}
