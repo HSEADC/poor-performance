@@ -138,6 +138,11 @@ module.exports = {
       filename: "./about.html",
     }),
 
+    new HtmlWebpackPlugin({
+      template: "./src/articles/template.html",
+      filename: "./articles/template.html.html",
+    }),
+
     // new HtmlWebpackPlugin({
     //   template: "./src/community.html",
     //   filename: "./community.html",
