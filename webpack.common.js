@@ -140,7 +140,7 @@ module.exports = {
 
     new HtmlWebpackPlugin({
       template: "./src/articles/template.html",
-      filename: "./articles/template.html.html",
+      filename: "./articles/template.html",
     }),
 
     // new HtmlWebpackPlugin({
