@@ -28,3 +28,24 @@ body {
 .hide {
   opacity: 0;
 }
+
+.auto {
+  justify-content: space-between;
+}
+
+.hidden {
+  display: none;
+}
+
+.pointer-events-none {
+  pointer-events: none;
+}
+
+.opacity-0 {
+  opacity: 0;
+}
+
+.bg-off {
+  background-image: "";
+  backdrop-filter: "";
+}
