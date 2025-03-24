@@ -434,3 +434,18 @@ a:focus {
   text-decoration: none;
   display: flex;
 }
+
+.A_ArticleImageItem {
+  display: block;
+  vertical-align: middle;
+  overflow: hidden;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.A_ArticleImage {
+  display: flex;
+  gap: 12px;
+  flex-direction: column;
+}
