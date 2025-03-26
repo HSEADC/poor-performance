@@ -1,1 +1,0 @@
-import"./index.css";document.addEventListener("DOMContentLoaded",(function(){"/ivents"===window.location.pathname&&document.getElementById("main-item-tab").focus()}));

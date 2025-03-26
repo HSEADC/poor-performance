@@ -1,2 +1,0 @@
-(()=>{"use strict";document.addEventListener("DOMContentLoaded",(function(){"/ivents"===window.location.pathname&&document.getElementById("main-item-tab").focus()}))})();
-//# sourceMappingURL=main.js.map

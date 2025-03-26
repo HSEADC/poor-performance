@@ -154,6 +154,43 @@ body {
   opacity: 0;
 }
 
+.auto {
+  justify-content: space-between;
+}
+
+.hidden {
+  display: none;
+}
+
+.pointer-events-none {
+  pointer-events: none;
+}
+
+.opacity-0 {
+  opacity: 0;
+}
+
+@font-face {
+  font-family: 'PP Neue Montreal Medium';
+  src: url(fonts/061e00cdc9ebd57b06f7.woff) format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PP Neue Montreal SemiBold';
+  src: url(fonts/e9a411f43c390e451b12.woff) format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PP Neue Montreal Bold';
+  src: url(fonts/ed3bcafc151441ea6ced.woff2) format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
 :root {
   --background: #f7f8fa;
   --yellow: #ffff00;
@@ -275,6 +312,194 @@ body {
 }
 .grid--24 {
   grid-column: span 24;
+}
+
+#horizontal-scroll {
+  overflow-x: auto;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge */
+}
+
+#horizontal-scroll::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+#horizontal-scroll {
+  cursor: grab;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+#horizontal-scroll::-webkit-scrollbar {
+  display: none;
+}
+#horizontal-scroll.dragging {
+  cursor: grabbing;
+  user-select: none;
+}
+
+body.article {
+  position: relative;
+}
+
+h1 {
+  font-family: 'PP Neue Montreal SemiBold';
+  font-size: var(--h1-font-size);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 85%;
+  letter-spacing: -1.42px;
+  text-transform: lowercase;
+}
+
+h2 {
+  font-family: 'PP Neue Montreal SemiBold';
+  font-size: var(--h2-font-size);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 85%;
+  letter-spacing: -0.96px;
+  text-transform: lowercase;
+}
+
+h3 {
+  font-family: 'PP Neue Montreal';
+  font-size: var(--h3-font-size);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 85%; /* 23.8px */
+  letter-spacing: -0.28px;
+  text-transform: lowercase;
+
+  a {
+    mix-blend-mode: difference;
+    color: var(--type-white);
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: auto;
+    text-decoration-thickness: 3%;
+    text-underline-offset: 9.5%;
+    text-underline-position: from-font;
+    text-transform: lowercase;
+    cursor: pointer;
+
+    font-family: 'PP Neue Montreal';
+    font-size: var(--h3-font-size);
+    font-style: normal;
+    font-weight: 600;
+    line-height: 85%; /* 23.8px */
+    letter-spacing: -0.28px;
+    text-transform: lowercase;
+  }
+}
+
+p.A_Heading3Burger {
+  color: var(--Type---type-primary, #0d0f11);
+  leading-trim: both;
+  text-edge: cap;
+  font-family: 'PP Neue Montreal';
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 85%; /* 23.8px */
+  letter-spacing: -0.28px;
+  text-transform: lowercase;
+}
+
+.A_LabelLarge {
+  font-family: 'PP Neue Montreal Medium';
+  font-size: var(--p-font-size);
+  font-style: normal;
+  font-weight: 200;
+  line-height: 115%;
+  letter-spacing: 0.4px;
+}
+
+.A_LabelMedium {
+  font-family: 'PP Neue Montreal Medium';
+  font-size: var(--p-A_LabelMedium-font-size);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 115%; /* 18.4px */
+  letter-spacing: 0.32px;
+}
+
+.A_LabelSmall {
+  display: flex;
+  font-family: 'PP Neue Montreal Medium';
+  font-size: var(--p-A_LabelSmall-font-size);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 115%; /* 16.1px */
+  letter-spacing: 0.14px;
+  color: var(--type-secondary);
+
+  a {
+    color: var(--type-secondary);
+    text-decoration: underline;
+  }
+}
+
+p {
+  font-family: 'PP Neue Montreal Medium';
+  font-size: var(--p-font-size);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+  letter-spacing: 0.4px;
+}
+
+p.Title {
+  font-family: 'PP Neue Montreal Bold';
+}
+
+p.Small {
+  font-family: 'PP Neue Montreal Medium';
+  font-size: var(--p-Small-font-size);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 16.8px */
+  letter-spacing: 0.12px;
+  color: var(--type-secondary);
+
+  a {
+    color: var(--type-secondary);
+    text-decoration: underline;
+  }
+}
+
+.W_ColabCardWorksopTextInfo p.Small {
+  display: -webkit-box;
+  -webkit-line-clamp: 5; /* сколько строк оставить */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+p.A_Capture {
+  font-family: 'PP Neue Montreal Medium';
+  font-size: var(--p-Small-font-size);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 115%; /* 13.8px */
+  letter-spacing: 0.12px;
+}
+
+.W_ColabCardWorksopText {
+  .A_Capture {
+    color: var(--type-secondary);
+  }
+}
+
+:root {
+  --h1-font-size: 72px;
+  --h2-font-size: 48px;
+  --h3-font-size: 28px;
+
+  --p-font-size: 20px;
+  --p-A_LabelMedium-font-size: 16px;
+  --p-A_LabelSmall-font-size: 14px;
+  --p-Small-font-size: 12px;
 }
 
 .Q_Dot {
@@ -292,7 +517,6 @@ body {
   text-decoration: none;
   display: flex;
   color: var(--type-white);
-  text-decoration-line: underline;
   text-decoration-style: solid;
   text-decoration-skip-ink: auto;
   text-decoration-thickness: 3%; /* 0.7px */
@@ -305,6 +529,80 @@ body {
 .Q_Icon_24 {
   width: 24px;
   height: 24px;
+}
+
+.Q_X {
+  object-fit: cover;
+}
+
+.Union {
+  object-fit: cover;
+  justify-content: center;
+  align-items: center;
+  width: 27.2879px;
+  height: 26.9076px;
+  text-decoration: none;
+  display: flex;
+}
+
+.Q_ArticleListItemBullet {
+  width: 4px;
+  height: 4px;
+  background-color: black;
+  border-radius: 99px;
+}
+
+.Q_HoverGradient {
+  background: linear-gradient(180deg, rgba(178, 255, 0, 0) 0%, #b2ff00 100%);
+}
+
+.Q_FooterPic {
+  position: absolute;
+  height: 1186px;
+  width: 100%;
+  max-width: 1440px;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: 0;
+
+  background-image: url(images/536221989790dc3ef68d.png);
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+.Q_PursonPic {
+  width: 60px;
+  aspect-ratio: 1 / 1;
+}
+
+.Q_SqrDot {
+  background-color: black;
+  width: 3px;
+  aspect-ratio: 1 / 1;
+  position: absolute;
+
+  &:nth-child(1) {
+    left: 0;
+    bottom: 0;
+  }
+  &:nth-child(2) {
+    right: 0;
+    bottom: 0;
+  }
+
+  &:nth-child(3) {
+    left: 0;
+    top: 0;
+  }
+  &:nth-child(4) {
+    right: 0;
+    top: 0;
+  }
+}
+
+.Q_LogoSvg {
+  mix-blend-mode: difference;
 }
 
 :root {
@@ -430,100 +728,40 @@ body {
   grid-column: span 24;
 }
 
+#horizontal-scroll {
+  overflow-x: auto;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge */
+}
+
+#horizontal-scroll::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+#horizontal-scroll {
+  cursor: grab;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+#horizontal-scroll::-webkit-scrollbar {
+  display: none;
+}
+#horizontal-scroll.dragging {
+  cursor: grabbing;
+  user-select: none;
+}
+
+body.article {
+  position: relative;
+}
+
 .A_3dCard {
-  object-fit: cover;
-  width: 100%;
-}
-
-@font-face {
-  font-family: "PP Neue Montreal Medium";
-  src: url(fonts/061e00cdc9ebd57b06f7.woff) format("woff");
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "PP Neue Montreal SemiBold";
-  src: url(fonts/e9a411f43c390e451b12.woff) format("woff");
-  font-weight: 600;
-  font-style: normal;
-}
-
-.A_Heading1 {
-  font-family: "PP Neue Montreal SemiBold";
-  font-size: 71px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 85%; /* 60.35px */
-  letter-spacing: -1.42px;
-  text-transform: lowercase;
-}
-.A_Heading2 {
-  font-family: "PP Neue Montreal SemiBold";
-  font-size: 48px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 85%; /* 40.8px */
-  letter-spacing: -0.96px;
-  text-transform: lowercase;
-}
-.A_Heading3 {
-  font-family: "PP Neue Montreal";
-  font-size: 28px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 85%; /* 23.8px */
-  letter-spacing: -0.28px;
-  text-transform: lowercase;
-}
-.A_LabelLarge {
-  font-family: "PP Neue Montreal Medium";
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 115%; /* 23px */
-  letter-spacing: 0.4px;
-}
-.A_LabelMedium {
-  font-family: "PP Neue Montreal Medium";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 115%; /* 18.4px */
-  letter-spacing: 0.32px;
-}
-.A_LabelSmall {
-  font-family: "PP Neue Montreal Medium";
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 115%; /* 16.1px */
-  letter-spacing: 0.14px;
-}
-.A_ParagraphBody {
-  font-family: "PP Neue Montreal Medium";
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 140%; /* 28px */
-  letter-spacing: 0.4px;
-}
-.A_ParagraphSmall {
-  font-family: "PP Neue Montreal Medium";
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 140%; /* 16.8px */
-  letter-spacing: 0.12px;
-}
-
-.A_Capture {
-  font-family: "PP Neue Montreal Medium";
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 115%; /* 13.8px */
-  letter-spacing: 0.12px;
+  object-fit: contain;
+  padding: 22px 50px;
+  img {
+    width: 100%;
+  }
 }
 
 a,
@@ -531,7 +769,14 @@ a:visited,
 a:hover,
 a:focus {
   text-decoration: none;
-  color: var(--type-primary);
+}
+
+h3 {
+  a {
+  }
+  a:hover {
+    text-decoration: none;
+  }
 }
 
 .A_ProfileImg {
@@ -566,12 +811,14 @@ a:focus {
   background-color: var(--surface-gray_48);
   justify-content: flex-start;
   align-items: flex-start;
-  width: 100%;
+  max-width: 227px;
+  min-width: 227px;
   padding: 2px 3px;
   text-decoration: none;
   display: flex;
   transition: all 250ms ease-in-out;
   cursor: pointer;
+  flex-shrink: 0;
 
   &:hover {
     background-color: var(--surface-brand-primary);
@@ -696,6 +943,19 @@ a:focus {
   pointer-events: none;
 }
 
+.A_Fade {
+  object-fit: cover;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 940px;
+  height: 87px;
+  text-decoration: none;
+  display: flex;
+  position: absolute;
+  bottom: 0;
+}
+
 .A_SmallLearningCardCover {
   vertical-align: middle;
   overflow: hidden;
@@ -730,13 +990,195 @@ a:focus {
   width: 100%;
 }
 
-.M_TimeAndTime {
-  grid-row-gap: 6px;
+.A_ArticleCoverVideo {
+  box-sizing: border-box;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.Author-Comments {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
   text-decoration: none;
   display: flex;
+  width: 100%;
+  position: relative;
+}
+
+.A_Button {
+  grid-column-gap: 128px;
+  -webkit-backdrop-filter: blur(40px);
+  backdrop-filter: blur(40px);
+  background-color: #0d0f110f;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% - 24px);
+  padding: 12px 12px 12px 12px;
+  text-decoration: none;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+
+  .A_LabelSmall {
+    color: black;
+  }
+
+  &.Content {
+    align-items: flex-start;
+    gap: 12px;
+  }
+}
+
+.Dot {
+  object-fit: cover;
+  justify-content: center;
+  align-items: center;
+  width: 3px;
+  height: 3px;
+  text-decoration: none;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.A_SmallRecsCover {
+  border-style: solid;
+  object-fit: contain;
+  overflow: hidden;
+  width: 104px;
+  aspect-ratio: 1 / 1;
+
+  background-image: url(images/d84b5264b03f96c9e539.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.A_ArticleCoverVideo {
+  box-sizing: border-box;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.A_MenuItemMobile {
+  grid-column-gap: 10px;
+  -webkit-backdrop-filter: blur(40px);
+  backdrop-filter: blur(40px);
+  justify-content: flex-end;
+  align-items: flex-start;
+  width: 100%;
+  padding: 12px 0px;
+  text-decoration: none;
+  display: flex;
+}
+
+.LabelStyle {
+  color: #0d0f11;
+  letter-spacing: -0.01em;
+  text-transform: lowercase;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 85%;
+  text-decoration: none;
+}
+
+.A_3DCardMobile {
+  grid-row-gap: 8px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  text-decoration: none;
+  display: flex;
+}
+
+.Text {
+  color: #0d0f11;
+  letter-spacing: -0.01em;
+  text-transform: lowercase;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 85%;
+  text-decoration: underline;
+}
+
+.IconsSocial {
+  grid-row-gap: 10px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 38.2024px;
+  padding-left: 3px;
+  padding-right: 3px;
+  text-decoration: none;
+  display: flex;
+}
+
+.A_ArticleImageItem {
+  display: block;
+  vertical-align: middle;
+  overflow: hidden;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.A_ArticleImage {
+  display: flex;
+  gap: 12px;
+  flex-direction: column;
+}
+
+.A_ArticleRecsCardArticleLinkBtn {
+  text-decoration: none;
+  translate: -20px;
+  width: calc(100vw);
+  background-color: #e2e3e4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 38px;
+
+  font-size: 14px;
+
+  font-family: 'PP Neue Montreal Medium';
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+  letter-spacing: 0.4px;
+}
+
+.A_ArticleRecsCardArticleLinkBtn:visited {
+  color: black;
+}
+
+.A_MobileReadmore {
+  display: none;
+}
+
+.M_TimeAndTime {
+  grid-row-gap: 6px;
+  flex-direction: column;
+  align-items: flex-start;
+  text-decoration: none;
+  display: flex;
+
+  #clock {
+    width: 90px;
+  }
 }
 
 .M_ItemCardBottomHeading {
@@ -754,7 +1196,7 @@ a:focus {
   grid-row-gap: 10px;
   background-color: #d9d9d9;
   background-image: linear-gradient(#0000 0%, #000 100%),
-    url("https://cdn.prod.website-files.com/65f48127807333cb199c5d35/67def0b964a9251a18b7367e_M_WorkCard.png");
+    url('https://cdn.prod.website-files.com/65f48127807333cb199c5d35/67def0b964a9251a18b7367e_M_WorkCard.png');
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -789,7 +1231,7 @@ a:focus {
   align-items: center;
   text-decoration: none;
   display: flex;
-  grid-column: span 12;
+  grid-column: span 10;
 }
 
 .M_HeroItem {
@@ -805,17 +1247,79 @@ a:focus {
   background-color: var(--surface-black_6);
 }
 
-.W_NavigationTop {
-  flex-direction: column;
+.M_ParagraphHeader {
+  grid-column-gap: 10px;
   justify-content: flex-start;
   align-items: flex-start;
-  max-width: 226px;
-  height: 100%;
+  width: 100%;
+  text-decoration: none;
+  display: flex;
+}
+
+.M_Purson {
+  grid-column-gap: 10px;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  text-decoration: none;
+  display: flex;
+}
+
+.Text {
+  color: #0d0f11;
+  letter-spacing: 0.01em;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 115%;
+  text-decoration: none;
+}
+
+.M_SmallRecomendations {
+  grid-row-gap: 16px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  text-decoration: none;
+  display: flex;
+  padding-left: 12px;
+  padding-right: 12px;
+
+  p {
+    font-family: 'PP Neue Montreal Medium';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 115%; /* 18.4px */
+    letter-spacing: 0.32px;
+    max-width: 120px;
+    text-align: center;
+    user-select: none;
+  }
+
+  &:hover {
+    .A_SmallRecsCover {
+      border-radius: 104px;
+      box-shadow: 0px 0px 20.529px 0px #b2ff00,
+        0px 0px 23.849px 0px #b2ff00 inset;
+    }
+    cursor: pointer;
+  }
+}
+
+.W_NavigationTop {
+  justify-content: flex-start;
+  align-items: flex-start;
+  max-width: 320px;
   display: flex;
   position: fixed;
   top: 12px;
   right: 18px;
   z-index: 3;
+  gap: 12px;
 }
 
 .W_NavigationBottom {
@@ -847,22 +1351,31 @@ a:focus {
 }
 
 .W_InfoLineHor {
-  display: grid;
-  grid-template-columns: repeat(24, 1fr); /* 6 гибких колонок */
+  display: flex;
+  justify-content: space-between;
   gap: 12px;
   padding-top: 4px;
   padding-bottom: 4px;
   align-items: center;
-  width: 100%;
+  width: calc(100% - 24px);
+  margin-left: 12px;
 }
 
 .W_End {
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+
+.W_InfoWrap {
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  width: calc(100% - 24px);
+  width: 100%;
   height: calc(100vh - 24px);
-  padding: 12px;
+  padding: 12px 0px 12px 0px;
   display: flex;
   position: relative;
 }
@@ -939,10 +1452,6 @@ a:focus {
   padding-left: 60px;
   text-decoration: none;
   display: flex;
-}
-
-.Fill {
-  width: 100%;
 }
 
 .W_ColabCardWorkShopTextYou {
@@ -1123,11 +1632,146 @@ a:focus {
   grid-column: 4;
 }
 
+.W_ColabCardWorksopText {
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 226px;
+  height: 226px;
+  text-decoration: none;
+  display: flex;
+  position: relative;
+}
+
+.W_CardHeading {
+  grid-row-gap: 12px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  text-decoration: none;
+  display: flex;
+}
+
+.W_PersonInfo {
+  grid-row-gap: 2px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  text-decoration: none;
+  display: flex;
+
+  .A_LabelSmall {
+    color: black;
+  }
+
+  .A_LabelSmall:nth-child(2) {
+    color: var(--type-secondary);
+  }
+}
+
+.W_NavigationTopMobile {
+  -webkit-backdrop-filter: blur(22px);
+  backdrop-filter: blur(22px);
+  background-image: linear-gradient(90deg, #e2e2e300, #e2e2e3);
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+  max-width: 375px;
+  height: 812px;
+  text-decoration: none;
+  display: none;
+  position: fixed;
+  overflow: hidden;
+  z-index: 3;
+}
+
+.W_MenuList {
+  grid-row-gap: 20px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  width: 100%;
+  max-width: 220px;
+  height: 100%;
+  padding-left: 8px;
+  padding-right: 8px;
+  text-decoration: none;
+  display: flex;
+}
+
+.LinkSocial {
+  grid-row-gap: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  text-decoration: none;
+  display: flex;
+}
+
+.W_ArticleHeading {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.W_ArticleListItem {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.W_StickyWrap {
+  margin-top: 64px;
+  margin-bottom: 64px;
+  width: 100%;
+  justify-content: space-between;
+  position: relative;
+  align-items: flex-start;
+
+  display: grid;
+  grid-template-columns: repeat(24, 1fr);
+  gap: 12px;
+}
+
+.W_ArticleArtifacts {
+  top: 360px;
+  grid-row-gap: 48px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-decoration: none;
+  display: flex;
+  position: sticky;
+  align-self: flex-start;
+
+  grid-column: 21 / 25;
+}
+
+.W_ArticleRecsCardArticleWrap {
+  display: none;
+  flex-direction: column;
+}
+
+.W_ArticleArtifacts.Mobile {
+  display: none;
+}
+
+.W_MenuNav {
+  display: flex;
+  flex-direction: column;
+}
+
 .C_TimeInfo {
+  gap: 14px;
   justify-content: space-between;
   align-items: center;
-  width: 130px;
-  padding: 10px 32px;
+  padding: 10px 20px 10px 0px;
   text-decoration: none;
   display: flex;
   color: var(--type-white);
@@ -1179,6 +1823,7 @@ a:focus {
   padding-bottom: 16px;
   text-decoration: none;
   display: flex;
+  margin-left: 12px;
 }
 
 .C_Bento {
@@ -1286,8 +1931,9 @@ a:focus {
   grid-template-columns: repeat(2, 1fr);
 }
 
-.C_Colabcardarticlecover {
-  box-sizing: border-box;
+.C_ColabCardArticleCover {
+  border: 1.5px solid #fff6;
+  max-width: 226px;
   object-fit: cover;
 }
 
@@ -1312,10 +1958,51 @@ a:focus {
   height: 100%;
 }
 
+.C_Recomendations {
+  display: flex;
+  gap: 24px;
+  justify-content: flex-start;
+  align-items: center;
+  text-decoration: none;
+  width: calc(100% - 24px);
+  width: 100%;
+  overflow-x: scroll;
+}
+
+.C_NavigationMobile {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  text-decoration: none;
+  display: flex;
+  padding-right: 12px;
+}
+
+.C_SocialIconsMobile {
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  text-decoration: none;
+  display: flex;
+}
+
+.C_ArticleList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  .A_ParagraphBody {
+    line-height: 100%;
+  }
+}
+
 .O_IventCardTop {
   grid-row-gap: 10px;
   background-color: #fff;
-  background-image: url("https://cdn.prod.website-files.com/65f48127807333cb199c5d35/660585780b3633f8581aaaa8_gra_photo.png");
+  background-image: url('https://cdn.prod.website-files.com/65f48127807333cb199c5d35/660585780b3633f8581aaaa8_gra_photo.png');
   background-position: 0 0;
   background-size: cover;
   flex-direction: column;
@@ -1352,7 +2039,7 @@ a:focus {
 }
 
 .O_ColabCardWorkShop {
-  background-image: url("https://cdn.prod.website-files.com/65f48127807333cb199c5d35/67def0b9a45d51194be8148f_O_ColabCardWorkshop.png");
+  background-image: url('https://cdn.prod.website-files.com/65f48127807333cb199c5d35/67def0b9a45d51194be8148f_O_ColabCardWorkshop.png');
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1380,7 +2067,7 @@ a:focus {
   text-decoration: none;
   display: flex;
   overflow: hidden;
-  background-image: url("https://cdn.prod.website-files.com/65f48127807333cb199c5d35/67def0b9a45d51194be8148f_O_ColabCardWorkshop.png");
+  background-image: url('https://cdn.prod.website-files.com/65f48127807333cb199c5d35/67def0b9a45d51194be8148f_O_ColabCardWorkshop.png');
 }
 
 .O_Footer {
@@ -1413,6 +2100,39 @@ a:focus {
   background-size: cover;
   width: 464px;
   min-height: 464px;
+}
+
+.O_TextParagraph {
+  grid-row-gap: 24px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  text-decoration: none;
+  display: flex;
+}
+
+.O_ArticleRecsCardArticle {
+  grid-column-gap: 12px;
+  justify-content: space-between;
+  width: 100%;
+  text-decoration: none;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+
+  &:hover {
+    background: linear-gradient(180deg, rgba(178, 255, 0, 0) 0%, #b2ff00 100%);
+    cursor: pointer;
+
+    .A_Fade {
+      display: none;
+    }
+  }
+}
+
+.O_ArticleRecsCardArticle.Mobile {
+  display: none;
 }
 
 .S_IventCard {
@@ -1489,7 +2209,307 @@ a:focus {
   margin-bottom: 160px;
 }
 
+.S_ArticleBody {
+  grid-row-gap: 64px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-top: 64px;
+  text-decoration: none;
+  display: flex;
+  position: relative;
+}
+
+.S_ArticleBodyText {
+  grid-row-gap: 64px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-left: 25%;
+  padding-right: 25%;
+  text-decoration: none;
+  display: flex;
+}
+
+.S_ArticleBodyTextParagraphs {
+  grid-row-gap: 64px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 702px;
+  text-decoration: none;
+  display: flex;
+
+  grid-column: 5 / 16;
+}
+
+.S_ArticleContent {
+  background-color: #f7f8fa;
+  flex-wrap: wrap;
+  width: 100%;
+  text-decoration: none;
+  display: flex;
+  position: relative;
+  min-height: 100vh;
+}
+
+@media only screen and (min-width: 1441px) {
+  .Q_FooterPic {
+    background-image: url(images/2c88a524f7f2c2415860.png);
+    max-width: none;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  :root {
+    --h1-font-size: 28px;
+
+    --p-font-size: 12px;
+    --p-A_LabelSmall-font-size: var(--p-font-size);
+  }
+
+  p.Title {
+    font-size: 14px;
+  }
+
+  .W_ArticleHeading {
+    justify-content: flex-start;
+    width: 100%;
+    gap: 12px;
+  }
+
+  .O_TextParagraph {
+    grid-row-gap: 16px;
+  }
+
+  .W_ArticleListItem {
+    p {
+      font-size: 14px;
+    }
+  }
+
+  .A_ArticleCoverVideo {
+    height: auto;
+  }
+
+  .S_ArticleBodyTextParagraphs {
+    width: 100%;
+    grid-row-gap: 32px;
+  }
+
+  .S_ArticleBodyText {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .O_ArticleRecsCardArticle {
+    display: none;
+  }
+
+  .W_ArticleRecsCardArticleWrap {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    .O_ArticleRecsCardArticle.Mobile {
+      justify-content: space-between;
+      align-items: flex-start;
+      overflow: hidden;
+      flex-direction: row-reverse;
+
+      grid-column-gap: 12px;
+      justify-content: space-between;
+      width: 100%;
+      text-decoration: none;
+      display: flex;
+      position: relative;
+      overflow: hidden;
+
+      &:hover {
+        background: none;
+        cursor: auto;
+      }
+    }
+  }
+
+  .C_ColabCardArticleCover {
+    height: 72px;
+    aspect-ratio: 1 / 1;
+  }
+
+  .W_ColabCardWorksopText {
+    height: auto;
+    gap: 12px;
+  }
+
+  .W_ArticleArtifacts.Mobile {
+    display: flex;
+    top: 0;
+    width: 100%;
+    position: relative;
+
+    .W_ArticleArtifacts {
+      grid-row-gap: 20px;
+      display: flex;
+      position: relative;
+      top: 0;
+      width: 100%;
+
+      .Author-Comments {
+        width: 100%;
+      }
+    }
+  }
+
+  .W_ColabCardWorksopTextInfo p.Small {
+    -webkit-line-clamp: none;
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+
+  .A_Fade {
+    display: none;
+  }
+
+  .W_ArticleArtifacts {
+    display: none;
+  }
+
+  .W_StickyWrap {
+    display: flex;
+    width: calc(100% - 40px);
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .S_ArticleContent {
+    justify-content: center;
+    overflow-x: hidden;
+  }
+
+  .Author-Comments {
+    position: relative;
+  }
+
+  .C_Recomendations {
+    gap: 20px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .A_MobileReadmore {
+    display: flex;
+
+    font-size: 14px;
+
+    font-family: 'PP Neue Montreal Medium';
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: 0.4px;
+    width: 100%;
+    margin-left: 20px;
+    margin-top: 12px;
+
+    &.First {
+      margin-left: 0px;
+    }
+  }
+
+  .M_SmallRecomendations {
+    aspect-ratio: auto;
+    width: auto;
+    gap: 10px;
+    position: relative;
+    overflow: visible;
+    padding-top: 20px;
+    padding-left: 4px;
+    padding-right: 4px;
+
+    p {
+      font-size: 12px;
+    }
+  }
+
+  .O_Footer {
+    display: none;
+  }
+
+  .W_NavigationBottom {
+    display: none;
+  }
+
+  .A_SmallRecsCover {
+    aspect-ratio: 1;
+    overflow: hidden;
+    width: 60px;
+  }
+
+  .W_NavigationTop {
+    display: none;
+  }
+
+  .W_NavigationTopMobile {
+    display: none;
+    max-width: 100%;
+    height: 100vh;
+
+    .A_MenuButtonMobile {
+      position: relative;
+      display: flex;
+      width: 60px;
+      height: 40px;
+      padding-top: 8px;
+      padding-bottom: 8px;
+
+      -webkit-backdrop-filter: none;
+      backdrop-filter: none;
+
+      background-image: url(images/d624da3bd5dbf4532212.svg);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      box-sizing: border-box;
+      background-clip: padding-box;
+      background-origin: content-box;
+    }
+  }
+
+  .A_MenuButtonMobile {
+    -webkit-backdrop-filter: blur(40px);
+    backdrop-filter: blur(40px);
+    position: fixed;
+    top: 0;
+    right: 0;
+
+    display: flex;
+    width: 60px;
+    height: 40px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+
+    background-image: url(images/46a4ec45d1a6de83df25.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-sizing: border-box;
+    background-clip: padding-box;
+    background-origin: content-box;
+
+    z-index: 999;
+  }
+
+  .W_MenuList {
+    max-width: 220px;
+  }
+
+  .A_MenuItemMobile {
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+  }
+}
 
 
 
-/*# sourceMappingURL=main.css.map*/
+/*# sourceMappingURL=index.css.map*/
