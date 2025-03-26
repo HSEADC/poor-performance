@@ -1,0 +1,148 @@
+h1 {
+  font-family: 'PP Neue Montreal SemiBold';
+  font-size: var(--h1-font-size);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 85%;
+  letter-spacing: -1.42px;
+  text-transform: lowercase;
+}
+
+h2 {
+  font-family: 'PP Neue Montreal SemiBold';
+  font-size: var(--h2-font-size);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 85%;
+  letter-spacing: -0.96px;
+  text-transform: lowercase;
+}
+
+h3 {
+  font-family: 'PP Neue Montreal';
+  font-size: var(--h3-font-size);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 85%; /* 23.8px */
+  letter-spacing: -0.28px;
+  text-transform: lowercase;
+
+  a {
+    mix-blend-mode: difference;
+    color: var(--type-white);
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: auto;
+    text-decoration-thickness: 3%;
+    text-underline-offset: 9.5%;
+    text-underline-position: from-font;
+    text-transform: lowercase;
+    cursor: pointer;
+
+    font-family: 'PP Neue Montreal';
+    font-size: var(--h3-font-size);
+    font-style: normal;
+    font-weight: 600;
+    line-height: 85%; /* 23.8px */
+    letter-spacing: -0.28px;
+    text-transform: lowercase;
+  }
+}
+
+p.A_Heading3Burger {
+  color: var(--Type---type-primary, #0d0f11);
+  leading-trim: both;
+  text-edge: cap;
+  font-family: 'PP Neue Montreal';
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 85%; /* 23.8px */
+  letter-spacing: -0.28px;
+  text-transform: lowercase;
+}
+
+.A_LabelLarge {
+  font-family: 'PP Neue Montreal Medium';
+  font-size: var(--p-font-size);
+  font-style: normal;
+  font-weight: 200;
+  line-height: 115%;
+  letter-spacing: 0.4px;
+}
+
+.A_LabelMedium {
+  font-family: 'PP Neue Montreal Medium';
+  font-size: var(--p-A_LabelMedium-font-size);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 115%; /* 18.4px */
+  letter-spacing: 0.32px;
+}
+
+.A_LabelSmall {
+  display: flex;
+  font-family: 'PP Neue Montreal Medium';
+  font-size: var(--p-A_LabelSmall-font-size);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 115%; /* 16.1px */
+  letter-spacing: 0.14px;
+  color: var(--type-secondary);
+
+  a {
+    color: var(--type-secondary);
+    text-decoration: underline;
+  }
+}
+
+p {
+  font-family: 'PP Neue Montreal Medium';
+  font-size: var(--p-font-size);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+  letter-spacing: 0.4px;
+}
+
+p.Title {
+  font-family: 'PP Neue Montreal Bold';
+}
+
+p.Small {
+  font-family: 'PP Neue Montreal Medium';
+  font-size: var(--p-Small-font-size);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 16.8px */
+  letter-spacing: 0.12px;
+  color: var(--type-secondary);
+
+  a {
+    color: var(--type-secondary);
+    text-decoration: underline;
+  }
+}
+
+.W_ColabCardWorksopTextInfo p.Small {
+  display: -webkit-box;
+  -webkit-line-clamp: 5; /* сколько строк оставить */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+p.A_Capture {
+  font-family: 'PP Neue Montreal Medium';
+  font-size: var(--p-Small-font-size);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 115%; /* 13.8px */
+  letter-spacing: 0.12px;
+}
+
+.W_ColabCardWorksopText {
+  .A_Capture {
+    color: var(--type-secondary);
+  }
+}

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="ru" dir="ltr">
   <head>
     <meta charset="utf-8" />
     <analytics></analytics>
@@ -7,17 +7,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../index.css" />
-    <script src="../index.js"></script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        document.getElementById("menu").addEventListener("click", function () {
-          console.log("Меню кликнуто");
-          const menuList = document.getElementById("menu-list");
-          menuList.classList.toggle("pointer-events-none");
-          menuList.classList.toggle("opacity-0");
-        });
-      });
-    </script>
 
     <!-- Primary Meta Tags -->
     <title>poor performance</title>
@@ -70,126 +59,124 @@
     />
     <link rel="manifest" href="../images/site.webmanifest" />
   </head>
-  <body class="body">
+  <body class="article">
     <div class="W_NavigationTop">
-      <div class="C_Navigation">
-        <a href="../index.html" class="A_MenuItem">
-          <p class="A_LabelSmall" id="main-item-tab">Главная</p>
-        </a>
-        <a href="../ivents.html" class="A_MenuItem">
-          <p class="A_LabelSmall" id="ivent-item-tab">Ивенты</p>
-        </a>
-        <a href="../tusovochka.html" class="A_MenuItem">
-          <p class="A_LabelSmall" id="tusovochka-item-tab">Тусовочка</p>
-        </a>
-        <a href="../ucheba.html" class="A_MenuItem">
-          <p class="A_LabelSmall" id="ucheba-item-tab">Учеба</p>
-        </a>
-        <a href="../about.html" class="A_MenuItem">
-          <p class="A_LabelSmall" id="about-item-tab">О нас</p>
-        </a>
-      </div>
-      <div class="A_3dCard">
-        <img
-          src="../images/pants.webp"
-          loading="lazy"
-          width="200"
-          height="200"
-          alt=""
-          class="A_3dCard"
-        />
+      <img src="../images/articles/Q_Logo.svg" alt="" class="Q_LogoSvg" />
+      <div class="W_MenuNav">
+        <div class="C_Navigation">
+          <a href="../index.html" class="A_MenuItem">
+            <p class="A_LabelSmall" id="main-item-tab">Главная</p>
+          </a>
+          <a href="../ivents.html" class="A_MenuItem">
+            <p class="A_LabelSmall" id="ivent-item-tab">Ивенты</p>
+          </a>
+          <a href="../tusovochka.html" class="A_MenuItem">
+            <p class="A_LabelSmall" id="tusovochka-item-tab">Тусовочка</p>
+          </a>
+          <a href="../ucheba.html" class="A_MenuItem">
+            <p class="A_LabelSmall" id="ucheba-item-tab">Учеба</p>
+          </a>
+          <a href="../about.html" class="A_MenuItem">
+            <p class="A_LabelSmall" id="about-item-tab">О нас</p>
+          </a>
+        </div>
+        <div class="A_3dCard">
+          <img src="../images/articles/Q_Trusi.png" loading="lazy" alt="" />
+        </div>
       </div>
     </div>
+    <div class="A_MenuButtonMobile" id="BurgerOpen"></div>
     <div class="W_NavigationTopMobile">
-      <div class="W_NavigationTopMobile">
-        <div class="A_MenuButtonMobile">
+      <div class="A_MenuButtonMobile" id="BurgerClose"></div>
+      <div id="menu-list" class="W_MenuList">
+        <div class="C_NavigationMobile">
+          <div class="A_MenuItemMobile">
+            <p class="A_Heading3Burger">Главная</p>
+          </div>
+          <div class="A_MenuItemMobile">
+            <p class="A_Heading3Burger">Ивенты</p>
+          </div>
+          <div class="A_MenuItemMobile">
+            <p class="A_Heading3Burger">Тусовочка</p>
+          </div>
+          <div class="A_MenuItemMobile">
+            <p class="A_Heading3Burger">Учеба</p>
+          </div>
+          <div class="A_MenuItemMobile">
+            <p class="A_Heading3Burger">О нас</p>
+          </div>
+        </div>
+        <div class="A_3DCardMobile">
           <img
-            src="https://cdn.prod.website-files.com/67e1c4bc5e5832a3c9a4e8c8/67e1c52695facb62e5e4f21e_Q_X.svg"
+            src="https://cdn.prod.website-files.com/67e1c4bc5e5832a3c9a4e8c8/67e1c52664314d6959c2b537_telegram-cloud-photo-size-2-5258267176060709578-x-1.png"
             loading="lazy"
-            width="24"
-            height="24"
+            width="100"
+            height="79.8671875"
             alt=""
             class="Q_X"
           />
+          <p class="A_Heading3Burger">надеть трусы $</p>
         </div>
-        <div id="menu-list" class="W_MenuList">
-          <div class="C_NavigationMobile">
-            <div class="A_MenuItemMobile">
-              <p class="A_Heading3">Главная</p>
-            </div>
-            <div class="A_MenuItemMobile">
-              <p class="A_Heading3">Ивенты</p>
-            </div>
-            <div class="A_MenuItemMobile">
-              <p class="A_Heading3">Тусовочка</p>
-            </div>
-            <div class="A_MenuItemMobile">
-              <p class="A_Heading3">Учеба</p>
-            </div>
-            <div class="A_MenuItemMobile">
-              <p class="A_Heading3">О нас</p>
-            </div>
+        <div class="C_SocialIconsMobile">
+          <div class="LinkSocial">
+            <a class="IconsSocial" href="https://t.me/poorperformance">
+              <img
+                src="https://cdn.prod.website-files.com/67e1c4bc5e5832a3c9a4e8c8/67e1c526f3b63521d32f9b7b_Vector.svg"
+                loading="lazy"
+                width="29.249889373779297"
+                height="25.74188804626465"
+                alt=""
+                class="Q_X"
+              />
+            </a>
           </div>
-          <div class="A_3DCardMobile">
-            <img
-              src="https://cdn.prod.website-files.com/67e1c4bc5e5832a3c9a4e8c8/67e1c52664314d6959c2b537_telegram-cloud-photo-size-2-5258267176060709578-x-1.png"
-              loading="lazy"
-              width="100"
-              height="79.8671875"
-              alt=""
-              class="Q_X"
-            />
-            <p class="A_Heading3">надеть трусы $</p>
+          <div class="LinkSocial">
+            <a
+              class="IconsSocial2"
+              href="https://www.instagram.com/poorperformance_media?igsh=OGQ5ZDc2ODk2ZA=="
+              target="_blank"
+            >
+              <img
+                src="https://cdn.prod.website-files.com/67e1c4bc5e5832a3c9a4e8c8/67e1c526dae7fc8b99c795f8_Union.svg"
+                loading="lazy"
+                width="27.287891387939453"
+                height="26.907569885253906"
+                alt=""
+                class="Union"
+              />
+            </a>
           </div>
-          <div class="C_SocialIconsMobile">
-            <div class="LinkSocial">
-              <div class="IconsSocial">
-                <img
-                  src="https://cdn.prod.website-files.com/67e1c4bc5e5832a3c9a4e8c8/67e1c526f3b63521d32f9b7b_Vector.svg"
-                  loading="lazy"
-                  width="29.249889373779297"
-                  height="25.74188804626465"
-                  alt=""
-                  class="Q_X"
-                />
-              </div>
-            </div>
-            <div class="LinkSocial">
-              <div class="IconsSocial2">
-                <img
-                  src="https://cdn.prod.website-files.com/67e1c4bc5e5832a3c9a4e8c8/67e1c526dae7fc8b99c795f8_Union.svg"
-                  loading="lazy"
-                  width="27.287891387939453"
-                  height="26.907569885253906"
-                  alt=""
-                  class="Union"
-                />
-              </div>
-            </div>
-            <div class="LinkSocial">
-              <div class="IconsSocial3">
-                <img
-                  src="https://cdn.prod.website-files.com/67e1c4bc5e5832a3c9a4e8c8/67e1c5268e2c7068026828ab_Vector.svg"
-                  loading="lazy"
-                  width="36.24760055541992"
-                  height="20.30481719970703"
-                  alt=""
-                  class="Q_X"
-                />
-              </div>
-            </div>
-            <div class="LinkSocial">
-              <div class="IconsSocial4">
-                <img
-                  src="https://cdn.prod.website-files.com/67e1c4bc5e5832a3c9a4e8c8/67e1c526c436a699b9e8d9db_Vector.svg"
-                  loading="lazy"
-                  width="32.552669525146484"
-                  height="24.259334564208984"
-                  alt=""
-                  class="Q_X"
-                />
-              </div>
-            </div>
+          <div class="LinkSocial">
+            <a
+              class="IconsSocial3"
+              href="https://www.are.na/poor-performance/channels"
+              target="_blank"
+            >
+              <img
+                src="https://cdn.prod.website-files.com/67e1c4bc5e5832a3c9a4e8c8/67e1c5268e2c7068026828ab_Vector.svg"
+                loading="lazy"
+                width="36.24760055541992"
+                height="20.30481719970703"
+                alt=""
+                class="Q_X"
+              />
+            </a>
+          </div>
+          <div class="LinkSocial">
+            <a
+              class="IconsSocial4"
+              href="https://youtube.com/@poorperformancehere?si=SsI7JHe6TS-5zbz7"
+              target="_blank"
+            >
+              <img
+                src="https://cdn.prod.website-files.com/67e1c4bc5e5832a3c9a4e8c8/67e1c526c436a699b9e8d9db_Vector.svg"
+                loading="lazy"
+                width="32.552669525146484"
+                height="24.259334564208984"
+                alt=""
+                class="Q_X"
+              />
+            </a>
           </div>
         </div>
       </div>
@@ -199,7 +186,7 @@
       <div class="C_TimeInfo">
         <div class="M_TimeAndTime" style="width: 100%">
           <p class="A_Capture">уже</p>
-          <p class="A_LabelLarge">21:45:53</p>
+          <p class="A_LabelLarge" id="clock">21:45:53</p>
         </div>
         <div class="M_TimeAndTime">
           <p class="A_Capture">мар</p>
@@ -227,184 +214,358 @@
     </div>
     <div class="S_ArticleContent">
       <img
-        src="https://cdn.prod.website-files.com/67e1a26df06e916e6629b9d4/67e1a2cd62214dc79c272a93_A_ArticleCoverVideo.png"
+        src="../images/articles/Q_ArticleCoverVideo_01.jpg"
         alt=""
         class="A_ArticleCoverVideo"
       />
-      <div class="S_ArticleBody">
-        <div class="S_ArticleBodyText">
-          <h1 class="A_Heading1">sd+тачдиз</h1>
-          <div class="S_ArticleBodyTextParagraphs">
-            <p class="A_ParagraphBody">
-              В данном руководстве мы рассмотрим, как интегрировать инструмент
-              генерации изображений на основе искусственного интеллекта, Stable
-              Diffusion, в среду TouchDesigner. Этот процесс позволит создавать
-              уникальные визуальные эффекты, объединяя возможности обоих
-              инструментов
+      <div class="W_StickyWrap">
+        <div class="S_ArticleBodyTextParagraphs">
+          <div class="W_ArticleHeading">
+            <h1>собственная моделька в replicate</h1>
+            <div class="A_LabelSmall">12 ноября 2024</div>
+          </div>
+          <p>
+            В стремительно развивающемся мире искусственного интеллекта обучение
+            и оптимизация моделей становятся всё более доступными. От создания
+            уникальных изображений до разработки детализированной графики —
+            инструменты ИИ открывают безграничные возможности.
+          </p>
+
+          <div class="O_TextParagraph">
+            <div class="M_ParagraphHeader">
+              <p class="Title">Введение</p>
+            </div>
+            <p>
+              Сейчас есть куча платформ для работы с ИИ, и каждая из них
+              заточена под разные задачи:
             </p>
-
-            <div class="O_TextParagraph">
-              <div class="M_ParagraphHeader">
-                <p class="A_ParagraphBody fill">heading</p>
-                <p class="A_LabelMedium">00:20</p>
+            <div class="C_ArticleList">
+              <div class="W_ArticleListItem">
+                <div class="Q_ArticleListItemBullet"></div>
+                <p>Replicate</p>
               </div>
-              <p class="A_ParagraphBody">
-                Установите Python: Убедитесь, что на вашем компьютере
-                установлена последняя версия Python. Это необходимо для работы
-                скриптов, связывающих TouchDesigner и Stable Diffusion.
-              </p>
-              <p class="A_ParagraphBody">
-                Установите библиотеки: Используйте менеджер пакетов pip для
-                установки необходимых библиотек, таких как torch, diffusers и
-                другие, требуемые для работы Stable Diffusion
-              </p>
-
-              <div class="A_ArticleImage">
-                <img
-                  class="A_ArticleImageItem"
-                  src="../images/img-style-guide-16.webp"
-                  alt=""
-                />
-                <p class="Secondary A_LabelSmall">подпись</p>
+              <div class="W_ArticleListItem">
+                <div class="Q_ArticleListItemBullet"></div>
+                <p>Artbreeder</p>
               </div>
             </div>
 
-            <div class="O_ArticleRecsCardArticle">
-              <div class="W_ColabCardWorksopText">
-                <div class="W_CardHeading">
-                  <h3 class="A_Heading3">собственная моделька в replicate</h3>
-                  <p class="A_Capture">24 февраля 2022</p>
-                </div>
-                <div class="W_ColabCardWorksopTextInfo">
-                  <p class="A_ParagraphSmall">
-                    Немецкая политическая партия правой и ультраправой
-                    идеологии, основанная в 2013 году. По итогам выборов 26
-                    сентября 2021 года занимает 83 места в бундестаге. Партию
-                    описывают как немецкую националистическую, правопопулистскую
-                    и евроскептическую
+            <p>
+              Эти платформы мощные, но не бесплатные. Зато цены вполне
+              дружелюбные — например, на Replicate обучение модели обойдётся
+              где‑то в два бакса, на ней и будем рабоать
+            </p>
+          </div>
+          <div class="O_TextParagraph">
+            <div class="M_ParagraphHeader">
+              <p class="Title">Начало работы</p>
+            </div>
+            <p>
+              Для старта регистрируйся на выбранных платформах. Как только
+              аккаунты готовы, подключайся к их дэшбордам. Настройка кажется
+              сложной только на первый взгляд — на деле всё проще простого.
+              Заходишь в систему — и можно сразу начинать обучение модели
+            </p>
+          </div>
+          <div class="O_TextParagraph">
+            <div class="M_ParagraphHeader">
+              <p class="Title">Обучение вашей модели ИИ</p>
+            </div>
+            <div class="A_ArticleImage">
+              <img
+                class="A_ArticleImageItem"
+                src="../images/articles/Q_ArticleBodyTextParagraphsPic01.png"
+                alt=""
+              />
+              <p class="Secondary A_LabelSmall">flux-dev-lora-trainer</p>
+            </div>
+          </div>
+
+          <a href="../about.html" class="O_ArticleRecsCardArticle">
+            <img
+              src="../images/articles/Q_ColabCardArticleCoversPic01.png"
+              class="C_ColabCardArticleCover"
+            />
+            <div class="W_ColabCardWorksopText">
+              <div class="W_CardHeading">
+                <h3>дизайн откровения артема милитониана</h3>
+                <p class="A_Capture">24 февраля 2022</p>
+              </div>
+              <div class="W_ColabCardWorksopTextInfo">
+                <p class="Small">
+                  В сентябре мы поговорили с Артемом Милитоняном —
+                  дизайнером-новатором, основателем социального Web3-приложения
+                  ORB и постоянным победителем международных дизайн-конкурсов
+                </p>
+              </div>
+            </div>
+
+            <img
+              src="https://cdn.prod.website-files.com/67e1a26df06e916e6629b9d4/67e1a2cd87d65df5164de1ae_A_Fade.svg"
+              class="A_Fade"
+            />
+          </a>
+
+          <div class="W_ArticleArtifacts Mobile">
+            <div class="W_ArticleArtifacts">
+              <div class="M_Purson">
+                <img
+                  src="../images/articles/Q_PursonPic01.png"
+                  class="Q_PursonPic"
+                />
+                <div class="W_PersonInfo">
+                  <p class="A_LabelSmall">артем милитониан</p>
+                  <p class="A_LabelSmall">
+                    <a href="http://t.me/designindex">t.me/designindex</a>
                   </p>
                 </div>
               </div>
+              <div class="Author-Comments">
+                <div class="A_Button">
+                  <div class="Q_SqrDot"></div>
+                  <div class="Q_SqrDot"></div>
+                  <div class="Q_SqrDot"></div>
+                  <div class="Q_SqrDot"></div>
+                  <p class="A_LabelSmall">Авторские заметки (3)</p>
+                </div>
+                <div class="A_Button Content">
+                  <div class="Q_SqrDot"></div>
+                  <div class="Q_SqrDot"></div>
+
+                  <p class="Small">
+                    Replicate:
+                    <a href="https://replicate.com/" target="_blank"
+                      >replicate.com</a
+                    >
+                  </p>
+                  <p class="Small">
+                    Trainer:
+                    <a href="http://clck.ru/3JTsAm" target="_blank"
+                      >clck.ru/3JTsAm</a
+                    >
+                  </p>
+                  <p class="Small">
+                    ИИ-курс:
+                    <a href="http://clck.ru/3JTsZD" target="_blank"
+                      >clck.ru/3JTsZD</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="A_MobileReadmore First">Читать далее</div>
+          <div class="W_ArticleRecsCardArticleWrap">
+            <div class="O_ArticleRecsCardArticle Mobile">
               <img
-                src="https://cdn.prod.website-files.com/67e1a26df06e916e6629b9d4/67e1a2cdb0d1042f9ac876a2_C_ColabCardArticleCover.png"
+                src="../images/articles/Q_ColabCardArticleCoversPic01.png"
                 class="C_ColabCardArticleCover"
               />
+              <div class="W_ColabCardWorksopText">
+                <div class="W_CardHeading">
+                  <h3>дизайн откровения артема милитониана</h3>
+                  <p class="A_Capture">24 февраля 2022</p>
+                </div>
+                <div class="W_ColabCardWorksopTextInfo">
+                  <p class="Small">
+                    В сентябре мы поговорили с Артемом Милитоняном —
+                    дизайнером-новатором, основателем социального
+                    Web3-приложения ORB и постоянным победителем международных
+                    дизайн-конкурсов
+                  </p>
+                </div>
+              </div>
               <img
                 src="https://cdn.prod.website-files.com/67e1a26df06e916e6629b9d4/67e1a2cd87d65df5164de1ae_A_Fade.svg"
                 class="A_Fade"
               />
             </div>
-
-            <!-- Повторяющиеся блоки O_TextParagraph -->
+            <a class="A_ArticleRecsCardArticleLinkBtn" href="../about.html"
+              >Перейти</a
+            >
           </div>
+
+          <!-- Повторяющиеся блоки O_TextParagraph -->
         </div>
-        <div class="C_Recomendations">
-          <div class="M_SmallRecomendations">
-            <img src="../images/articlexs.png" class="A_SmallRecsCover" />
-            <p>sd+тач диз</p>
-          </div>
-          <div class="M_SmallRecomendations">
-            <img src="../images/articlexs.png" class="A_SmallRecsCover" />
-            <p>sd+тач диз</p>
-          </div>
-          <div class="M_SmallRecomendations">
-            <img src="../images/articlexs.png" class="A_SmallRecsCover" />
-            <p>sd+тач диз</p>
-          </div>
-          <div class="M_SmallRecomendations">
-            <img src="../images/articlexs.png" class="A_SmallRecsCover" />
-            <p>sd+тач диз</p>
-          </div>
-          <div class="M_SmallRecomendations">
-            <img src="../images/articlexs.png" class="A_SmallRecsCover" />
-            <p>sd+тач диз</p>
-          </div>
-
-          <!-- Повторяющиеся блоки рекомендаций -->
-        </div>
-
         <div class="W_ArticleArtifacts">
           <div class="M_Purson">
             <img
-              src="https://cdn.prod.website-files.com/67e1a26df06e916e6629b9d4/67e1a2cd2d9f4f6664d05eab_telegram-peer-photo-size-2-5449690260670900586-1-0-0.png"
-              class="Telegram-Peer-Photo-Size-2-5449690260670900586-1-0-0"
+              src="../images/articles/Q_PursonPic01.png"
+              class="Q_PursonPic"
             />
             <div class="W_PersonInfo">
-              <p>иван сергиенко</p>
-              <p>@trcj66</p>
+              <p class="A_LabelSmall">артем милитониан</p>
+              <p class="A_LabelSmall">
+                <a href="http://t.me/designindex">t.me/designindex</a>
+              </p>
             </div>
           </div>
-
           <div class="Author-Comments">
             <div class="A_Button">
-              <p>Авторские заметки (4)</p>
-              <img
-                src="https://cdn.prod.website-files.com/67e1a26df06e916e6629b9d4/67e1a2cd325efc9f01fa45fd_Rectangle-346241271.svg"
-                class="Dot"
-              />
+              <div class="Q_SqrDot"></div>
+              <div class="Q_SqrDot"></div>
+              <div class="Q_SqrDot"></div>
+              <div class="Q_SqrDot"></div>
+              <p class="A_LabelSmall">Авторские заметки (3)</p>
             </div>
+            <div class="A_Button Content">
+              <div class="Q_SqrDot"></div>
+              <div class="Q_SqrDot"></div>
 
-            <div class="A_Button-2">
-              <!-- Текстовые блоки с стилизованным контентом -->
+              <p class="Small">
+                Replicate:
+                <a href="https://replicate.com/" target="_blank"
+                  >replicate.com</a
+                >
+              </p>
+              <p class="Small">
+                Trainer:
+                <a href="http://clck.ru/3JTsAm" target="_blank"
+                  >clck.ru/3JTsAm</a
+                >
+              </p>
+              <p class="Small">
+                ИИ-курс:
+                <a href="http://clck.ru/3JTsZD" target="_blank"
+                  >clck.ru/3JTsZD</a
+                >
+              </p>
             </div>
           </div>
         </div>
-        <div class="O_Footer">
-          <div class="W_Form">
-            <p class="A_LabelLarge">тебе чего то не хватило? пиши в тг</p>
-            <div class="M_TelegramBadge">
-              <img
-                src="https://cdn.prod.website-files.com/65f48127807333cb199c5d35/67def0b9e0f2be61cb786461_telegram-peer-photo-size-2-5449690260670900586-1-0-0.png"
-                loading="lazy"
-                width="61"
-                height="61"
-                alt=""
-                class="A_Avatar"
-              />
-              <div class="A_TelegarmText">
-                <p class="A_LabelSmall">@hello_poorperformance</p>
-                <p class="A_LabelSmall">
-                  ответит маша, мб андрей, ваня не умеет
-                </p>
-              </div>
+      </div>
+      <div class="A_MobileReadmore">Все статьи</div>
+      <div class="C_Recomendations" id="horizontal-scroll">
+        <div class="M_SmallRecomendations">
+          <div class="A_SmallRecsCover"></div>
+          <p>название статьи очень длинное</p>
+        </div>
+        <div class="M_SmallRecomendations">
+          <div class="A_SmallRecsCover"></div>
+          <p>название статьи очень длинное</p>
+        </div>
+        <div class="M_SmallRecomendations">
+          <div class="A_SmallRecsCover"></div>
+          <p>название статьи очень длинное</p>
+        </div>
+        <div class="M_SmallRecomendations">
+          <div class="A_SmallRecsCover"></div>
+          <p>название статьи очень длинное</p>
+        </div>
+        <div class="M_SmallRecomendations">
+          <div class="A_SmallRecsCover"></div>
+          <p>название статьи очень длинное</p>
+        </div>
+        <div class="M_SmallRecomendations">
+          <div class="A_SmallRecsCover"></div>
+          <p>название статьи очень длинное</p>
+        </div>
+        <div class="M_SmallRecomendations">
+          <div class="A_SmallRecsCover"></div>
+          <p>название статьи очень длинное</p>
+        </div>
+        <div class="M_SmallRecomendations">
+          <div class="A_SmallRecsCover"></div>
+          <p>название статьи очень длинное</p>
+        </div>
+        <div class="M_SmallRecomendations">
+          <div class="A_SmallRecsCover"></div>
+          <p>название статьи очень длинное</p>
+        </div>
+        <div class="M_SmallRecomendations">
+          <div class="A_SmallRecsCover"></div>
+          <p>название статьи очень длинное</p>
+        </div>
+        <div class="M_SmallRecomendations">
+          <div class="A_SmallRecsCover"></div>
+          <p>название статьи очень длинное</p>
+        </div>
+        <div class="M_SmallRecomendations">
+          <div class="A_SmallRecsCover"></div>
+          <p>название статьи очень длинное</p>
+        </div>
+        <div class="M_SmallRecomendations">
+          <div class="A_SmallRecsCover"></div>
+          <p>название статьи очень длинное</p>
+        </div>
+        <div class="M_SmallRecomendations">
+          <div class="A_SmallRecsCover"></div>
+          <p>название статьи очень длинное</p>
+        </div>
+        <div class="M_SmallRecomendations">
+          <div class="A_SmallRecsCover"></div>
+          <p>название статьи очень длинное</p>
+        </div>
+      </div>
+
+      <div class="O_Footer">
+        <div class="W_Form">
+          <p class="A_LabelLarge">тебе чего то не хватило? пиши в тг</p>
+          <div class="M_TelegramBadge">
+            <img
+              src="https://cdn.prod.website-files.com/65f48127807333cb199c5d35/67def0b9e0f2be61cb786461_telegram-peer-photo-size-2-5449690260670900586-1-0-0.png"
+              loading="lazy"
+              width="61"
+              height="61"
+              alt=""
+              class="A_Avatar"
+            />
+            <div class="A_TelegarmText">
+              <p class="A_LabelSmall">@hello_poorperformance</p>
+              <p class="A_LabelSmall">ответит маша, мб андрей, ваня не умеет</p>
             </div>
           </div>
-          <div class="W_End">
+        </div>
+        <div class="W_End">
+          <div class="W_InfoWrap">
             <div class="W_InfoLineHor">
-              <div class="M_TelegramBadge">
-                <p class="grid--4 A_LabelSmall">Нейромедиа для креаторов</p>
-                <div class="Q_LogoMaster Png">
-                  <img
-                    src="https://cdn.prod.website-files.com/65f48127807333cb199c5d35/67def0b906dbd888bc1488d9_discription%3Don-1.png"
-                    loading="lazy"
-                    width="377.1891784667969"
-                    height="156.98048400878906"
-                    alt=""
-                    class="grid--6"
-                  />
-                </div>
+              <p class="grid--4 A_LabelSmall">Нейромедиа для креаторов</p>
+              <div class="Q_LogoMaster Png">
+                <img
+                  src="../images/articles/Q_Logo.png"
+                  loading="lazy"
+                  width="377.1891784667969"
+                  height="156.98048400878906"
+                  alt=""
+                  class="grid--6"
+                />
               </div>
-              <div class="W_InfoLineEnd">
-                <p class="A_LabelSmall">
-                  Подпишись на рассылку, чтобы быть узнать ну инфу
-                </p>
-                <div class="A_MenuItem">
-                  <p class="A_LabelSmall">Styleguide</p>
-                </div>
+              <p class="A_LabelSmall">
+                Подпишись на рассылку, чтобы быть узнать ну инфу
+              </p>
+              <div class="A_MenuItem">
+                <p class="A_LabelSmall">Styleguide</p>
               </div>
             </div>
             <div class="C_Links">
               <div class="Q_Link">
-                <h3 class="A_Heading3">Telegram</h3>
+                <h3>
+                  <a href="https://t.me/poorperformance" target="_blank"
+                    >Telegram</a
+                  >
+                </h3>
               </div>
               <div class="Q_Link">
-                <h3 class="A_Heading3">Instagram</h3>
+                <h3>
+                  <a
+                    href="https://www.instagram.com/poorperformance_media?igsh=OGQ5ZDc2ODk2ZA=="
+                    target="_blank"
+                    >Instagram</a
+                  >
+                </h3>
               </div>
               <div class="Q_Link">
-                <h3 class="A_Heading3">X.com</h3>
+                <h3>
+                  <a
+                    href="https://www.linkedin.com/company/poorperformance/"
+                    target="_blank"
+                    >linkedin</a
+                  >
+                </h3>
               </div>
             </div>
           </div>
+          <div class="Q_FooterPic"></div>
         </div>
       </div>
     </div>

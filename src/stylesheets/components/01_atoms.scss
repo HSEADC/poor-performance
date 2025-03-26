@@ -1,99 +1,11 @@
-@import "../constants.scss";
+@import '../constants.scss';
 
 .A_3dCard {
-  object-fit: cover;
-  width: 100%;
-}
-
-@font-face {
-  font-family: "PP Neue Montreal Medium";
-  src: url("../../fonts/PPNeueMontreal-Medium.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "PP Neue Montreal SemiBold";
-  src: url("../../fonts/PPNeueMontreal-SemiBold.woff") format("woff");
-  font-weight: 600;
-  font-style: normal;
-}
-
-.A_Heading1 {
-  font-family: "PP Neue Montreal SemiBold";
-  font-size: 71px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 85%; /* 60.35px */
-  letter-spacing: -1.42px;
-  text-transform: lowercase;
-}
-.A_Heading2 {
-  font-family: "PP Neue Montreal SemiBold";
-  font-size: 48px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 85%; /* 40.8px */
-  letter-spacing: -0.96px;
-  text-transform: lowercase;
-}
-.A_Heading3 {
-  font-family: "PP Neue Montreal";
-  font-size: 28px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 85%; /* 23.8px */
-  letter-spacing: -0.28px;
-  text-transform: lowercase;
-}
-.A_LabelLarge {
-  font-family: "PP Neue Montreal Medium";
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 115%; /* 23px */
-  letter-spacing: 0.4px;
-}
-.A_LabelMedium {
-  font-family: "PP Neue Montreal Medium";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 115%; /* 18.4px */
-  letter-spacing: 0.32px;
-}
-.A_LabelSmall {
-  font-family: "PP Neue Montreal Medium";
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 115%; /* 16.1px */
-  letter-spacing: 0.14px;
-}
-.A_ParagraphBody {
-  font-family: "PP Neue Montreal Medium";
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 140%; /* 28px */
-  letter-spacing: 0.4px;
-}
-.A_ParagraphSmall {
-  font-family: "PP Neue Montreal Medium";
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 140%; /* 16.8px */
-  letter-spacing: 0.12px;
-}
-
-.A_Capture {
-  font-family: "PP Neue Montreal Medium";
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 115%; /* 13.8px */
-  letter-spacing: 0.12px;
+  object-fit: contain;
+  padding: 22px 50px;
+  img {
+    width: 100%;
+  }
 }
 
 a,
@@ -101,7 +13,14 @@ a:visited,
 a:hover,
 a:focus {
   text-decoration: none;
-  color: var(--type-primary);
+}
+
+h3 {
+  a {
+  }
+  a:hover {
+    text-decoration: none;
+  }
 }
 
 .A_ProfileImg {
@@ -136,12 +55,14 @@ a:focus {
   background-color: var(--surface-gray_48);
   justify-content: flex-start;
   align-items: flex-start;
-  width: 100%;
+  max-width: 227px;
+  min-width: 227px;
   padding: 2px 3px;
   text-decoration: none;
   display: flex;
   transition: all 250ms ease-in-out;
   cursor: pointer;
+  flex-shrink: 0;
 
   &:hover {
     background-color: var(--surface-brand-primary);
@@ -326,9 +247,10 @@ a:focus {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  width: 100%;
   text-decoration: none;
   display: flex;
+  width: 100%;
+  position: relative;
 }
 
 .A_Button {
@@ -338,11 +260,21 @@ a:focus {
   background-color: #0d0f110f;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  padding: 12px;
+  width: calc(100% - 24px);
+  padding: 12px 12px 12px 12px;
   text-decoration: none;
   display: flex;
   position: relative;
+  flex-direction: column;
+
+  .A_LabelSmall {
+    color: black;
+  }
+
+  &.Content {
+    align-items: flex-start;
+    gap: 12px;
+  }
 }
 
 .Dot {
@@ -360,11 +292,15 @@ a:focus {
 
 .A_SmallRecsCover {
   border-style: solid;
-  border-width: undefinedpx;
   object-fit: contain;
-  border-color: #fff6;
-  border-radius: 1000px;
   overflow: hidden;
+  width: 104px;
+  aspect-ratio: 1 / 1;
+
+  background-image: url('../../images/articles/A_SmallRecsCover01.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
 .A_ArticleCoverVideo {
@@ -383,7 +319,7 @@ a:focus {
   justify-content: flex-end;
   align-items: flex-start;
   width: 100%;
-  padding: 12px 3px;
+  padding: 12px 0px;
   text-decoration: none;
   display: flex;
 }
@@ -448,4 +384,31 @@ a:focus {
   display: flex;
   gap: 12px;
   flex-direction: column;
+}
+
+.A_ArticleRecsCardArticleLinkBtn {
+  text-decoration: none;
+  translate: -20px;
+  width: calc(100vw);
+  background-color: #e2e3e4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 38px;
+
+  font-size: 14px;
+
+  font-family: 'PP Neue Montreal Medium';
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+  letter-spacing: 0.4px;
+}
+
+.A_ArticleRecsCardArticleLinkBtn:visited {
+  color: black;
+}
+
+.A_MobileReadmore {
+  display: none;
 }

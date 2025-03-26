@@ -120,3 +120,31 @@
 .grid--24 {
   grid-column: span 24;
 }
+
+#horizontal-scroll {
+  overflow-x: auto;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge */
+}
+
+#horizontal-scroll::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+#horizontal-scroll {
+  cursor: grab;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+#horizontal-scroll::-webkit-scrollbar {
+  display: none;
+}
+#horizontal-scroll.dragging {
+  cursor: grabbing;
+  user-select: none;
+}
+
+body.article {
+  position: relative;
+}

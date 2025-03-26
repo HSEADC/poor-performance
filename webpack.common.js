@@ -1,20 +1,20 @@
-const HtmlWebpackPlugin = require("html-webpack-plugin");
-const HtmlWebpackPartialsPlugin = require("html-webpack-partials-plugin");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const HtmlWebpackPartialsPlugin = require('html-webpack-partials-plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+
 // const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
 
-const webpack = require("webpack");
-const path = require("path");
+const webpack = require('webpack')
+const path = require('path')
 
 module.exports = {
-  // entry: {
-  //   index: "./src/index.js",
-  //   jsBasic: "./src/js-basics/js-basic.js",
-  // },
+  entry: {
+    index: './src/index.js'
+  },
   output: {
-    filename: "[name].js",
-    path: path.resolve(__dirname, "docs"),
-    clean: true,
+    filename: '[name].js',
+    path: path.resolve(__dirname, 'docs'),
+    clean: true
   },
   module: {
     rules: [
@@ -22,65 +22,66 @@ module.exports = {
         test: /\.(js|jsx)$/i,
         exclude: /node_modules/,
         use: {
-          loader: "babel-loader",
+          loader: 'babel-loader',
           options: {
-            presets: ["@babel/preset-env", "@babel/preset-react"],
-            plugins: ["@babel/plugin-proposal-class-properties"],
-          },
-        },
+            presets: ['@babel/preset-env', '@babel/preset-react'],
+            plugins: ['@babel/plugin-proposal-class-properties']
+          }
+        }
       },
       {
         test: /\.(sa|sc|c)ss$/i,
         use: [
           MiniCssExtractPlugin.loader,
-          "css-loader",
+          'css-loader',
           {
-            loader: "postcss-loader",
+            loader: 'postcss-loader',
             options: {
               postcssOptions: {
-                plugins: [["postcss-preset-env"]],
-              },
-            },
+                plugins: [['postcss-preset-env']]
+              }
+            }
           },
-          "sass-loader",
-        ],
+          'sass-loader'
+        ]
       },
       {
         test: /\.html$/i,
-        loader: "html-loader",
+        loader: 'html-loader'
       },
       {
         resourceQuery: /raw/,
-        type: "asset/source",
+        type: 'asset/source'
       },
       {
         test: /\.(png|jpg|jpeg|gif|svg|webp|mp4)$/i,
-        type: "asset/resource",
+        type: 'asset/resource',
         generator: {
-          filename: "images/[hash][ext][query]",
-        },
+          filename: 'images/[hash][ext][query]'
+        }
       },
       {
         test: /\.(ttf|otf|woff|woff2|eot)$/i,
-        type: "asset/resource",
+        type: 'asset/resource',
         generator: {
-          filename: "fonts/[hash][ext][query]",
-        },
-      },
-    ],
+          filename: 'fonts/[hash][ext][query]'
+        }
+      }
+    ]
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: "[name].css",
-      chunkFilename: "[id].css",
+      filename: '[name].css',
+      chunkFilename: '[id].css'
     }),
 
     // HTML pages with viewport meta
     new HtmlWebpackPlugin({
-      template: "./src/index.html",
-      filename: "./index.html",
-      meta: { viewport: "width=device-width, initial-scale=1" },
-      favicon: "./src/images/favicon.ico",
+      template: './src/index.html',
+      filename: './index.html',
+      meta: { viewport: 'width=device-width, initial-scale=1' },
+      favicon: './src/images/favicon.ico',
+      chunks: ['index']
     }),
 
     // new HtmlWebpackPlugin({
@@ -99,13 +100,13 @@ module.exports = {
     // }),
 
     new HtmlWebpackPlugin({
-      template: "./src/ucheba.html",
-      filename: "./ucheba.html",
+      template: './src/ucheba.html',
+      filename: './ucheba.html'
     }),
 
     new HtmlWebpackPlugin({
-      template: "./src/tusovochka.html",
-      filename: "./tusovochka.html",
+      template: './src/tusovochka.html',
+      filename: './tusovochka.html'
     }),
 
     // new HtmlWebpackPlugin({
@@ -119,13 +120,13 @@ module.exports = {
     // }),
 
     new HtmlWebpackPlugin({
-      template: "./src/style-guide.html",
-      filename: "./style-guide.html",
+      template: './src/style-guide.html',
+      filename: './style-guide.html'
     }),
 
     new HtmlWebpackPlugin({
-      template: "./src/ivents.html",
-      filename: "./ivents.html",
+      template: './src/ivents.html',
+      filename: './ivents.html'
     }),
 
     // new HtmlWebpackPlugin({
@@ -134,14 +135,15 @@ module.exports = {
     // }),
 
     new HtmlWebpackPlugin({
-      template: "./src/about.html",
-      filename: "./about.html",
+      template: './src/about.html',
+      filename: './about.html'
     }),
 
     new HtmlWebpackPlugin({
-      template: "./src/articles/template.html",
-      filename: "./articles/template.html",
-    }),
+      template: './src/articles/template.html',
+      filename: './articles/template.html',
+      chunks: ['index']
+    })
 
     // new HtmlWebpackPlugin({
     //   template: "./src/community.html",
@@ -233,16 +235,16 @@ module.exports = {
     // Минификация CSS - раскомментируйте, если хотите использовать
     // minimizer: [new CssMinimizerPlugin()]
   },
-  devtool: "source-map", // для отладки CSS и JS
+  devtool: 'source-map', // для отладки CSS и JS
   resolve: {
-    extensions: [".js", ".jsx"], // Упрощает импорт JS и JSX файлов
+    extensions: ['.js', '.jsx'] // Упрощает импорт JS и JSX файлов
   },
   devServer: {
     static: {
-      directory: path.join(__dirname, "docs"),
+      directory: path.join(__dirname, 'docs')
     },
     compress: true,
     port: 9000,
-    open: true,
-  },
-};
+    open: true
+  }
+}

@@ -1,8 +1,8 @@
 .C_TimeInfo {
+  gap: 14px;
   justify-content: space-between;
   align-items: center;
-  width: 130px;
-  padding: 10px 32px;
+  padding: 10px 20px 10px 0px;
   text-decoration: none;
   display: flex;
   color: var(--type-white);
@@ -54,6 +54,7 @@
   padding-bottom: 16px;
   text-decoration: none;
   display: flex;
+  margin-left: 12px;
 }
 
 .C_Bento {
@@ -161,8 +162,9 @@
   grid-template-columns: repeat(2, 1fr);
 }
 
-.C_Colabcardarticlecover {
-  box-sizing: border-box;
+.C_ColabCardArticleCover {
+  border: 1.5px solid #fff6;
+  max-width: 226px;
   object-fit: cover;
 }
 
@@ -187,19 +189,15 @@
   height: 100%;
 }
 
-.C_ColabCardArticleCover {
-  object-fit: cover;
-  border: 1.61847px solid #fff6;
-}
-
 .C_Recomendations {
-  grid-column-gap: 30px;
-  flex: 0 auto;
+  display: flex;
+  gap: 24px;
   justify-content: flex-start;
   align-items: center;
   text-decoration: none;
-  display: flex;
-  overflow: scroll;
+  width: calc(100% - 24px);
+  width: 100%;
+  overflow-x: scroll;
 }
 
 .C_NavigationMobile {
@@ -209,6 +207,7 @@
   width: 100%;
   text-decoration: none;
   display: flex;
+  padding-right: 12px;
 }
 
 .C_SocialIconsMobile {
@@ -219,4 +218,14 @@
   padding-bottom: 8px;
   text-decoration: none;
   display: flex;
+}
+
+.C_ArticleList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  .A_ParagraphBody {
+    line-height: 100%;
+  }
 }

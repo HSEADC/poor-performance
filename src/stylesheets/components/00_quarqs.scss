@@ -13,7 +13,6 @@
   text-decoration: none;
   display: flex;
   color: var(--type-white);
-  text-decoration-line: underline;
   text-decoration-style: solid;
   text-decoration-skip-ink: auto;
   text-decoration-thickness: 3%; /* 0.7px */
@@ -40,4 +39,64 @@
   height: 26.9076px;
   text-decoration: none;
   display: flex;
+}
+
+.Q_ArticleListItemBullet {
+  width: 4px;
+  height: 4px;
+  background-color: black;
+  border-radius: 99px;
+}
+
+.Q_HoverGradient {
+  background: linear-gradient(180deg, rgba(178, 255, 0, 0) 0%, #b2ff00 100%);
+}
+
+.Q_FooterPic {
+  position: absolute;
+  height: 1186px;
+  width: 100%;
+  max-width: 1440px;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: 0;
+
+  background-image: url('../../images/articles/Q_FooterPic.png');
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+.Q_PursonPic {
+  width: 60px;
+  aspect-ratio: 1 / 1;
+}
+
+.Q_SqrDot {
+  background-color: black;
+  width: 3px;
+  aspect-ratio: 1 / 1;
+  position: absolute;
+
+  &:nth-child(1) {
+    left: 0;
+    bottom: 0;
+  }
+  &:nth-child(2) {
+    right: 0;
+    bottom: 0;
+  }
+
+  &:nth-child(3) {
+    left: 0;
+    top: 0;
+  }
+  &:nth-child(4) {
+    right: 0;
+    top: 0;
+  }
+}
+
+.Q_LogoSvg {
+  mix-blend-mode: difference;
 }

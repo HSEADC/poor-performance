@@ -1,14 +1,13 @@
 .W_NavigationTop {
-  flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  max-width: 226px;
-  height: 100%;
+  max-width: 320px;
   display: flex;
   position: fixed;
   top: 12px;
   right: 18px;
   z-index: 3;
+  gap: 12px;
 }
 
 .W_NavigationBottom {
@@ -40,22 +39,31 @@
 }
 
 .W_InfoLineHor {
-  display: grid;
-  grid-template-columns: repeat(24, 1fr); /* 6 гибких колонок */
+  display: flex;
+  justify-content: space-between;
   gap: 12px;
   padding-top: 4px;
   padding-bottom: 4px;
   align-items: center;
-  width: 100%;
+  width: calc(100% - 24px);
+  margin-left: 12px;
 }
 
 .W_End {
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+
+.W_InfoWrap {
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  width: calc(100% - 24px);
+  width: 100%;
   height: calc(100vh - 24px);
-  padding: 12px;
+  padding: 12px 0px 12px 0px;
   display: flex;
   position: relative;
 }
@@ -132,10 +140,6 @@
   padding-left: 60px;
   text-decoration: none;
   display: flex;
-}
-
-.Fill {
-  width: 100%;
 }
 
 .W_ColabCardWorkShopTextYou {
@@ -338,33 +342,6 @@
   display: flex;
 }
 
-.W_ColabCardWorksopTextInfo {
-  grid-row-gap: 12px;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  width: 100%;
-  max-width: 226px;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  text-decoration: none;
-  display: flex;
-}
-
-.W_ArticleArtifacts {
-  grid-row-gap: 48px;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  width: 100%;
-  max-width: 226px;
-  text-decoration: none;
-  display: flex;
-  position: absolute;
-  top: 70px;
-  right: 12px;
-}
-
 .W_PersonInfo {
   grid-row-gap: 2px;
   flex-direction: column;
@@ -373,6 +350,14 @@
   width: 100%;
   text-decoration: none;
   display: flex;
+
+  .A_LabelSmall {
+    color: black;
+  }
+
+  .A_LabelSmall:nth-child(2) {
+    color: var(--type-secondary);
+  }
 }
 
 .W_NavigationTopMobile {
@@ -390,18 +375,6 @@
   position: fixed;
   overflow: hidden;
   z-index: 3;
-}
-
-.A_MenuButtonMobile {
-  grid-column-gap: 10px;
-  -webkit-backdrop-filter: blur(40px);
-  backdrop-filter: blur(40px);
-  flex: 0 auto;
-  justify-content: center;
-  align-items: center;
-  padding: 8px 18px;
-  text-decoration: none;
-  display: flex;
 }
 
 .W_MenuList {
@@ -427,4 +400,57 @@
   height: 50px;
   text-decoration: none;
   display: flex;
+}
+
+.W_ArticleHeading {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.W_ArticleListItem {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.W_StickyWrap {
+  margin-top: 64px;
+  margin-bottom: 64px;
+  width: 100%;
+  justify-content: space-between;
+  position: relative;
+  align-items: flex-start;
+
+  display: grid;
+  grid-template-columns: repeat(24, 1fr);
+  gap: 12px;
+}
+
+.W_ArticleArtifacts {
+  top: 360px;
+  grid-row-gap: 48px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-decoration: none;
+  display: flex;
+  position: sticky;
+  align-self: flex-start;
+
+  grid-column: 21 / 25;
+}
+
+.W_ArticleRecsCardArticleWrap {
+  display: none;
+  flex-direction: column;
+}
+
+.W_ArticleArtifacts.Mobile {
+  display: none;
+}
+
+.W_MenuNav {
+  display: flex;
+  flex-direction: column;
 }

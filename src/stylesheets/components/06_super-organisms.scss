@@ -76,11 +76,9 @@
   grid-row-gap: 64px;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   width: 100%;
   padding-top: 64px;
-  padding-left: 12px;
-  padding-right: 12px;
   text-decoration: none;
   display: flex;
   position: relative;
@@ -91,7 +89,6 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  width: 100%;
   padding-left: 25%;
   padding-right: 25%;
   text-decoration: none;
@@ -103,19 +100,19 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 60%;
+  width: 702px;
   text-decoration: none;
   display: flex;
+
+  grid-column: 5 / 16;
 }
 
 .S_ArticleContent {
   background-color: #f7f8fa;
   flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: flex-start;
   width: 100%;
   text-decoration: none;
   display: flex;
   position: relative;
-  overflow: hidden;
+  min-height: 100vh;
 }

@@ -1,7 +1,7 @@
 .O_IventCardTop {
   grid-row-gap: 10px;
   background-color: #fff;
-  background-image: url("https://cdn.prod.website-files.com/65f48127807333cb199c5d35/660585780b3633f8581aaaa8_gra_photo.png");
+  background-image: url('https://cdn.prod.website-files.com/65f48127807333cb199c5d35/660585780b3633f8581aaaa8_gra_photo.png');
   background-position: 0 0;
   background-size: cover;
   flex-direction: column;
@@ -38,7 +38,7 @@
 }
 
 .O_ColabCardWorkShop {
-  background-image: url("https://cdn.prod.website-files.com/65f48127807333cb199c5d35/67def0b9a45d51194be8148f_O_ColabCardWorkshop.png");
+  background-image: url('https://cdn.prod.website-files.com/65f48127807333cb199c5d35/67def0b9a45d51194be8148f_O_ColabCardWorkshop.png');
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -66,7 +66,7 @@
   text-decoration: none;
   display: flex;
   overflow: hidden;
-  background-image: url("https://cdn.prod.website-files.com/65f48127807333cb199c5d35/67def0b9a45d51194be8148f_O_ColabCardWorkshop.png");
+  background-image: url('https://cdn.prod.website-files.com/65f48127807333cb199c5d35/67def0b9a45d51194be8148f_O_ColabCardWorkshop.png');
 }
 
 .O_Footer {
@@ -102,7 +102,7 @@
 }
 
 .O_TextParagraph {
-  grid-row-gap: 32px;
+  grid-row-gap: 24px;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
@@ -114,10 +114,22 @@
 .O_ArticleRecsCardArticle {
   grid-column-gap: 12px;
   justify-content: space-between;
-  align-items: center;
   width: 100%;
   text-decoration: none;
   display: flex;
   position: relative;
   overflow: hidden;
+
+  &:hover {
+    background: linear-gradient(180deg, rgba(178, 255, 0, 0) 0%, #b2ff00 100%);
+    cursor: pointer;
+
+    .A_Fade {
+      display: none;
+    }
+  }
+}
+
+.O_ArticleRecsCardArticle.Mobile {
+  display: none;
 }
